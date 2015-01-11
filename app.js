@@ -28,7 +28,7 @@ app.use('/', routes);
 app.use('/users', users);
 
 var http = require('http');
-var server = http.createServer(app);
+var server = app.createServer();
 
 var io = require('socket.io').listen(app);
 
