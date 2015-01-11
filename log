@@ -1,54 +1,5 @@
-2015-01-11T19:17:11.719353+00:00 app[web.1]: > node ./bin/www
-2015-01-11T19:17:11.719354+00:00 app[web.1]: 
-2015-01-11T19:17:12.128927+00:00 app[web.1]: npm ERR! FoodTrucksATX@0.0.0 start: `node ./bin/www`
-2015-01-11T19:17:12.129253+00:00 app[web.1]: npm ERR! 
-2015-01-11T19:17:12.130016+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
-2015-01-11T19:17:12.129113+00:00 app[web.1]: npm ERR! Exit status 8
-2015-01-11T19:17:12.129921+00:00 app[web.1]: npm ERR! not with npm itself.
-2015-01-11T19:17:12.130111+00:00 app[web.1]: npm ERR!     node ./bin/www
-2015-01-11T19:17:12.130209+00:00 app[web.1]: npm ERR! You can get their info via:
-2015-01-11T19:17:12.133975+00:00 app[web.1]: npm ERR! 
-2015-01-11T19:17:12.129347+00:00 app[web.1]: npm ERR! Failed at the FoodTrucksATX@0.0.0 start script.
-2015-01-11T19:17:12.129831+00:00 app[web.1]: npm ERR! This is most likely a problem with the FoodTrucksATX package,
-2015-01-11T19:17:12.131219+00:00 app[web.1]: npm ERR! cwd /app
-2015-01-11T19:17:12.130413+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
-2015-01-11T19:17:12.131008+00:00 app[web.1]: npm ERR! command "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
-2015-01-11T19:17:12.131361+00:00 app[web.1]: npm ERR! node -v v0.10.35
-2015-01-11T19:17:12.131526+00:00 app[web.1]: npm ERR! npm -v 1.4.28
-2015-01-11T19:17:12.130317+00:00 app[web.1]: npm ERR!     npm owner ls FoodTrucksATX
-2015-01-11T19:17:12.134125+00:00 app[web.1]: npm ERR! Additional logging details can be found in:
-2015-01-11T19:17:12.130831+00:00 app[web.1]: npm ERR! System Linux 3.8.11-ec2
-2015-01-11T19:17:12.134575+00:00 app[web.1]: npm ERR! not ok code 0
-2015-01-11T19:17:12.131663+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2015-01-11T19:17:12.134243+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
-2015-01-11T19:17:12.110671+00:00 app[web.1]: 
-2015-01-11T19:17:12.110752+00:00 app[web.1]: /app/node_modules/socket.io/lib/index.js:199
-2015-01-11T19:17:12.111032+00:00 app[web.1]:     throw new Error(msg);
-2015-01-11T19:17:12.111037+00:00 app[web.1]:           ^
-2015-01-11T19:17:12.112547+00:00 app[web.1]: Error: You are trying to attach socket.io to an expressrequest handler function. Please pass a http.Server instance.
-2015-01-11T19:17:12.112549+00:00 app[web.1]:     at Server.listen.Server.attach (/app/node_modules/socket.io/lib/index.js:199:11)
-2015-01-11T19:17:12.112551+00:00 app[web.1]:     at new Server (/app/node_modules/socket.io/lib/index.js:51:17)
-2015-01-11T19:17:12.112555+00:00 app[web.1]:     at Module._compile (module.js:456:26)
-2015-01-11T19:17:12.112556+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
-2015-01-11T19:17:12.112561+00:00 app[web.1]:     at require (module.js:380:17)
-2015-01-11T19:17:12.112552+00:00 app[web.1]:     at Function.Server (/app/node_modules/socket.io/lib/index.js:39:41)
-2015-01-11T19:17:12.112558+00:00 app[web.1]:     at Module.load (module.js:356:32)
-2015-01-11T19:17:12.112560+00:00 app[web.1]:     at Module.require (module.js:364:17)
-2015-01-11T19:17:12.112559+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
-2015-01-11T19:17:12.123567+00:00 app[web.1]: 
-2015-01-11T19:17:12.112554+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:17:31)
-2015-01-11T19:17:12.924382+00:00 heroku[web.1]: Process exited with status 1
-2015-01-11T19:17:12.933712+00:00 heroku[web.1]: State changed from starting to crashed
-2015-01-11T19:17:14.096080+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1421003827046-3" host=tranquil-badlands-1388.herokuapp.com request_id=4dcc3ed9-23c9-4c32-ad4d-fdd7ac01764c fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
-2015-01-11T19:17:16.717313+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1421003836044-4" host=tranquil-badlands-1388.herokuapp.com request_id=4b706116-e514-4ea1-8036-3e8317105689 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
-2015-01-11T19:17:20.722383+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1421003840045-5" host=tranquil-badlands-1388.herokuapp.com request_id=44bb33f1-b256-4d0d-8765-f866fa65f674 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
-2015-01-11T19:17:25.902295+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1421003845044-6" host=tranquil-badlands-1388.herokuapp.com request_id=319e28d0-d233-41bd-9509-34c92393db60 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
-2015-01-11T19:17:31.624974+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1421003851046-7" host=tranquil-badlands-1388.herokuapp.com request_id=a8baf1f1-a398-4b59-9d2e-529c97f4d9da fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
-2015-01-11T19:17:38.644302+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1421003858045-8" host=tranquil-badlands-1388.herokuapp.com request_id=1c3faf1e-d04c-4580-9420-572fbc5eeac3 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
-2015-01-11T19:17:44.662868+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1421003864045-9" host=tranquil-badlands-1388.herokuapp.com request_id=69d051cf-e841-4991-a562-b63e0f2a428c fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
 2015-01-11T19:17:50.815025+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1421003870045-10" host=tranquil-badlands-1388.herokuapp.com request_id=72131a41-2300-49f0-b73d-7f220a33a7e7 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
-2015-01-11T19:17:56.676563+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1421003876047-11" host=tranquil-bad
-lands-1388.herokuapp.com request_id=b4eee8ca-04d9-4e90-9cd7-e12aeae6d6be fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
+2015-01-11T19:17:56.676563+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1421003876047-11" host=tranquil-badlands-1388.herokuapp.com request_id=b4eee8ca-04d9-4e90-9cd7-e12aeae6d6be fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
 2015-01-11T19:18:02.613402+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1421003882049-12" host=tranquil-badlands-1388.herokuapp.com request_id=1493eb3f-ff74-4a85-a512-fb5b3faa7169 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
 2015-01-11T19:18:04.682159+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tranquil-badlands-1388.herokuapp.com request_id=e6ba7e41-6079-4548-aab6-783897614ca6 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
 2015-01-11T19:19:03.264470+00:00 heroku[api]: Deploy 2f1be2b by ulises.card@gmail.com
@@ -100,3 +51,51 @@ lands-1388.herokuapp.com request_id=b4eee8ca-04d9-4e90-9cd7-e12aeae6d6be fwd="71
 2015-01-11T19:19:07.008781+00:00 heroku[web.1]: State changed from starting to crashed
 2015-01-11T19:19:35.500818+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tranquil-badlands-1388.herokuapp.com request_id=fe72c818-b3d3-4146-ba3f-47c7e1733f77 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
 2015-01-11T19:19:37.490443+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tranquil-badlands-1388.herokuapp.com request_id=a78bdc64-8f39-413a-9c04-4fe425033ce7 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
+2015-01-11T19:22:14.161360+00:00 heroku[api]: Deploy 6e54368 by ulises.card@gmail.com
+2015-01-11T19:22:14.161360+00:00 heroku[api]: Release v28 created by ulises.card@gmail.com
+2015-01-11T19:22:14.392659+00:00 heroku[web.1]: State changed from crashed to starting
+2015-01-11T19:22:17.084113+00:00 heroku[web.1]: Starting process with command `npm start`
+2015-01-11T19:22:18.735967+00:00 app[web.1]: 
+2015-01-11T19:22:18.735987+00:00 app[web.1]: > node ./bin/www
+2015-01-11T19:22:18.735989+00:00 app[web.1]: 
+2015-01-11T19:22:18.735985+00:00 app[web.1]: > FoodTrucksATX@0.0.0 start /app
+2015-01-11T19:22:19.509525+00:00 app[web.1]: npm ERR! not with npm itself.
+2015-01-11T19:22:19.508671+00:00 app[web.1]: npm ERR! Failed at the FoodTrucksATX@0.0.0 start script.
+2015-01-11T19:22:19.509392+00:00 app[web.1]: npm ERR! This is most likely a problem with the FoodTrucksATX package,
+2015-01-11T19:22:19.508403+00:00 app[web.1]: npm ERR! Exit status 8
+2015-01-11T19:22:19.508562+00:00 app[web.1]: npm ERR! 
+2015-01-11T19:22:19.509636+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2015-01-11T19:22:19.508159+00:00 app[web.1]: npm ERR! FoodTrucksATX@0.0.0 start: `node ./bin/www`
+2015-01-11T19:22:19.509748+00:00 app[web.1]: npm ERR!     node ./bin/www
+2015-01-11T19:22:19.510112+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2015-01-11T19:22:19.515473+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2015-01-11T19:22:19.511204+00:00 app[web.1]: npm ERR! cwd /app
+2015-01-11T19:22:19.516410+00:00 app[web.1]: npm ERR! not ok code 0
+2015-01-11T19:22:19.509995+00:00 app[web.1]: npm ERR!     npm owner ls FoodTrucksATX
+2015-01-11T19:22:19.509852+00:00 app[web.1]: npm ERR! You can get their info via:
+2015-01-11T19:22:19.515370+00:00 app[web.1]: npm ERR! Additional logging details can be found in:
+2015-01-11T19:22:19.511457+00:00 app[web.1]: npm ERR! node -v v0.10.35
+2015-01-11T19:22:19.510667+00:00 app[web.1]: npm ERR! System Linux 3.8.11-ec2
+2015-01-11T19:22:19.515252+00:00 app[web.1]: npm ERR! 
+2015-01-11T19:22:19.510916+00:00 app[web.1]: npm ERR! command "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2015-01-11T19:22:19.511765+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2015-01-11T19:22:19.511597+00:00 app[web.1]: npm ERR! npm -v 1.4.28
+2015-01-11T19:22:19.488866+00:00 app[web.1]: 
+2015-01-11T19:22:19.488948+00:00 app[web.1]: /app/app.js:34
+2015-01-11T19:22:19.489295+00:00 app[web.1]: io.configure(function () {  
+2015-01-11T19:22:19.489305+00:00 app[web.1]:    ^
+2015-01-11T19:22:19.491915+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:34:4)
+2015-01-11T19:22:19.491911+00:00 app[web.1]: TypeError: Object #<Server> has no method 'configure'
+2015-01-11T19:22:19.491916+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-01-11T19:22:19.491920+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-01-11T19:22:19.491921+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-01-11T19:22:19.491923+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-01-11T19:22:19.491924+00:00 app[web.1]:     at require (module.js:380:17)
+2015-01-11T19:22:19.491926+00:00 app[web.1]:     at Object.<anonymous> (/app/bin/www:7:11)
+2015-01-11T19:22:19.491927+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-01-11T19:22:19.491918+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-01-11T19:22:19.491929+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-01-11T19:22:19.501643+00:00 app[web.1]: 
+2015-01-11T19:22:20.390267+00:00 heroku[web.1]: Process exited with status 1
+2015-01-11T19:22:20.400304+00:00 heroku[web.1]: State changed from starting to crashed
+2015-01-11T19:22:37.616685+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tranquil-badlands-1388.herokuapp.com request_id=df514b8b-5747-4c45-82a8-e7f8c8a3c4a9 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=

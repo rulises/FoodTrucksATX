@@ -31,13 +31,11 @@ var server = http.createServer(app)
 
 var io = require('socket.io').listen(server);
 
-io.configure(function () {  
+io.configure('production', function () {  
+    io.set('log level', 1);
     io.set("transports", ["xhr-polling"]); 
     io.set("polling duration", 10); 
 });
-
-// delete to see more logs from sockets
-io.set('log level', 1);
 
 io.sockets.on('connection', function (socket) {
 
