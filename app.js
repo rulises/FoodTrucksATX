@@ -26,6 +26,29 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
+
+var Static = require('node-static');
+var io = require('socket.io').listen(app);
+var files = new Static.Server('./public');
+
+
+function handler (req, res) {
+    req.on('end', function() {
+        files.serve(req, res);
+    }).resume();
+}
+
+// delete to see more logs from sockets
+io.set('log level', 1);
+
+io.sockets.on('connection', function (socket) {
+
+    socket.on('send:coords', function (data) {
+        socket.broadcast.emit('load:coords', data);
+    });
+});
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
