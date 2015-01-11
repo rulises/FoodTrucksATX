@@ -21,18 +21,6 @@ app.set('port', port);
 
 var server = http.createServer(app);
 
-var io = require('socket.io').listen(server);
-
-// delete to see more logs from sockets
-io.set('log level', 1);
-
-io.sockets.on('connection', function (socket) {
-
-    socket.on('send:coords', function (data) {
-        socket.broadcast.emit('load:coords', data);
-    });
-});
-
 /**
  * Listen on provided port, on all network interfaces.
  */

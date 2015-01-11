@@ -14,6 +14,23 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+var io = require('socket.io').listen(app);
+
+io.configure(function () {  
+    io.set("transports", ["xhr-polling"]); 
+    io.set("polling duration", 10); 
+});
+
+// delete to see more logs from sockets
+io.set('log level', 1);
+
+io.sockets.on('connection', function (socket) {
+
+    socket.on('send:coords', function (data) {
+        socket.broadcast.emit('load:coords', data);
+    });
+});
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
