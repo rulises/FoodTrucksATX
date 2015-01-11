@@ -1,101 +1,101 @@
-2015-01-11T19:17:50.815025+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1421003870045-10" host=tranquil-badlands-1388.herokuapp.com request_id=72131a41-2300-49f0-b73d-7f220a33a7e7 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
-2015-01-11T19:17:56.676563+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1421003876047-11" host=tranquil-badlands-1388.herokuapp.com request_id=b4eee8ca-04d9-4e90-9cd7-e12aeae6d6be fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
-2015-01-11T19:18:02.613402+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1421003882049-12" host=tranquil-badlands-1388.herokuapp.com request_id=1493eb3f-ff74-4a85-a512-fb5b3faa7169 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
-2015-01-11T19:18:04.682159+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tranquil-badlands-1388.herokuapp.com request_id=e6ba7e41-6079-4548-aab6-783897614ca6 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
-2015-01-11T19:19:03.264470+00:00 heroku[api]: Deploy 2f1be2b by ulises.card@gmail.com
-2015-01-11T19:19:03.264555+00:00 heroku[api]: Release v27 created by ulises.card@gmail.com
-2015-01-11T19:19:03.404107+00:00 heroku[web.1]: State changed from crashed to starting
-2015-01-11T19:19:04.881142+00:00 heroku[web.1]: Starting process with command `npm start`
-2015-01-11T19:19:05.751128+00:00 app[web.1]: 
-2015-01-11T19:19:05.751147+00:00 app[web.1]: > FoodTrucksATX@0.0.0 start /app
-2015-01-11T19:19:05.751149+00:00 app[web.1]: > node ./bin/www
-2015-01-11T19:19:05.751151+00:00 app[web.1]: 
-2015-01-11T19:19:06.288057+00:00 app[web.1]: npm ERR! FoodTrucksATX@0.0.0 start: `node ./bin/www`
-2015-01-11T19:19:06.288592+00:00 app[web.1]: npm ERR! Failed at the FoodTrucksATX@0.0.0 start script.
-2015-01-11T19:19:06.288475+00:00 app[web.1]: npm ERR! 
-2015-01-11T19:19:06.288295+00:00 app[web.1]: npm ERR! Exit status 8
-2015-01-11T19:19:06.289452+00:00 app[web.1]: npm ERR!     node ./bin/www
-2015-01-11T19:19:06.289846+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
-2015-01-11T19:19:06.289231+00:00 app[web.1]: npm ERR! not with npm itself.
-2015-01-11T19:19:06.289122+00:00 app[web.1]: npm ERR! This is most likely a problem with the FoodTrucksATX package,
-2015-01-11T19:19:06.289613+00:00 app[web.1]: npm ERR! You can get their info via:
-2015-01-11T19:19:06.289336+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
-2015-01-11T19:19:06.289732+00:00 app[web.1]: npm ERR!     npm owner ls FoodTrucksATX
-2015-01-11T19:19:06.268083+00:00 app[web.1]: 
-2015-01-11T19:19:06.291623+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2015-01-11T19:19:06.268416+00:00 app[web.1]: io.configure(function () {  
-2015-01-11T19:19:06.290769+00:00 app[web.1]: npm ERR! System Linux 3.8.11-ec2
-2015-01-11T19:19:06.291173+00:00 app[web.1]: npm ERR! cwd /app
-2015-01-11T19:19:06.291018+00:00 app[web.1]: npm ERR! command "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
-2015-01-11T19:19:06.268156+00:00 app[web.1]: /app/app.js:34
-2015-01-11T19:19:06.291335+00:00 app[web.1]: npm ERR! node -v v0.10.35
-2015-01-11T19:19:06.270794+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:34:4)
-2015-01-11T19:19:06.268420+00:00 app[web.1]:    ^
-2015-01-11T19:19:06.291484+00:00 app[web.1]: npm ERR! npm -v 1.4.28
-2015-01-11T19:19:06.293745+00:00 app[web.1]: npm ERR! 
-2015-01-11T19:19:06.270791+00:00 app[web.1]: TypeError: Object #<Server> has no method 'configure'
-2015-01-11T19:19:06.270796+00:00 app[web.1]:     at Module._compile (module.js:456:26)
-2015-01-11T19:19:06.270797+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
-2015-01-11T19:19:06.270799+00:00 app[web.1]:     at Module.load (module.js:356:32)
-2015-01-11T19:19:06.294260+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
-2015-01-11T19:19:06.294456+00:00 app[web.1]: npm ERR! not ok code 0
-2015-01-11T19:19:06.270800+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
-2015-01-11T19:19:06.293859+00:00 app[web.1]: npm ERR! Additional logging details can be found in:
-2015-01-11T19:19:06.270802+00:00 app[web.1]:     at Module.require (module.js:364:17)
-2015-01-11T19:19:06.270804+00:00 app[web.1]:     at require (module.js:380:17)
-2015-01-11T19:19:06.270805+00:00 app[web.1]:     at Object.<anonymous> (/app/bin/www:7:11)
-2015-01-11T19:19:06.270807+00:00 app[web.1]:     at Module._compile (module.js:456:26)
-2015-01-11T19:19:06.282088+00:00 app[web.1]: 
-2015-01-11T19:19:06.270808+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
-2015-01-11T19:19:06.990210+00:00 heroku[web.1]: Process exited with status 1
-2015-01-11T19:19:07.008781+00:00 heroku[web.1]: State changed from starting to crashed
-2015-01-11T19:19:35.500818+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tranquil-badlands-1388.herokuapp.com request_id=fe72c818-b3d3-4146-ba3f-47c7e1733f77 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
-2015-01-11T19:19:37.490443+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tranquil-badlands-1388.herokuapp.com request_id=a78bdc64-8f39-413a-9c04-4fe425033ce7 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
-2015-01-11T19:22:14.161360+00:00 heroku[api]: Deploy 6e54368 by ulises.card@gmail.com
-2015-01-11T19:22:14.161360+00:00 heroku[api]: Release v28 created by ulises.card@gmail.com
-2015-01-11T19:22:14.392659+00:00 heroku[web.1]: State changed from crashed to starting
-2015-01-11T19:22:17.084113+00:00 heroku[web.1]: Starting process with command `npm start`
-2015-01-11T19:22:18.735967+00:00 app[web.1]: 
-2015-01-11T19:22:18.735987+00:00 app[web.1]: > node ./bin/www
-2015-01-11T19:22:18.735989+00:00 app[web.1]: 
-2015-01-11T19:22:18.735985+00:00 app[web.1]: > FoodTrucksATX@0.0.0 start /app
-2015-01-11T19:22:19.509525+00:00 app[web.1]: npm ERR! not with npm itself.
-2015-01-11T19:22:19.508671+00:00 app[web.1]: npm ERR! Failed at the FoodTrucksATX@0.0.0 start script.
-2015-01-11T19:22:19.509392+00:00 app[web.1]: npm ERR! This is most likely a problem with the FoodTrucksATX package,
-2015-01-11T19:22:19.508403+00:00 app[web.1]: npm ERR! Exit status 8
-2015-01-11T19:22:19.508562+00:00 app[web.1]: npm ERR! 
-2015-01-11T19:22:19.509636+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
-2015-01-11T19:22:19.508159+00:00 app[web.1]: npm ERR! FoodTrucksATX@0.0.0 start: `node ./bin/www`
-2015-01-11T19:22:19.509748+00:00 app[web.1]: npm ERR!     node ./bin/www
-2015-01-11T19:22:19.510112+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
-2015-01-11T19:22:19.515473+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
-2015-01-11T19:22:19.511204+00:00 app[web.1]: npm ERR! cwd /app
-2015-01-11T19:22:19.516410+00:00 app[web.1]: npm ERR! not ok code 0
-2015-01-11T19:22:19.509995+00:00 app[web.1]: npm ERR!     npm owner ls FoodTrucksATX
-2015-01-11T19:22:19.509852+00:00 app[web.1]: npm ERR! You can get their info via:
-2015-01-11T19:22:19.515370+00:00 app[web.1]: npm ERR! Additional logging details can be found in:
-2015-01-11T19:22:19.511457+00:00 app[web.1]: npm ERR! node -v v0.10.35
-2015-01-11T19:22:19.510667+00:00 app[web.1]: npm ERR! System Linux 3.8.11-ec2
-2015-01-11T19:22:19.515252+00:00 app[web.1]: npm ERR! 
-2015-01-11T19:22:19.510916+00:00 app[web.1]: npm ERR! command "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
-2015-01-11T19:22:19.511765+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2015-01-11T19:22:19.511597+00:00 app[web.1]: npm ERR! npm -v 1.4.28
-2015-01-11T19:22:19.488866+00:00 app[web.1]: 
-2015-01-11T19:22:19.488948+00:00 app[web.1]: /app/app.js:34
-2015-01-11T19:22:19.489295+00:00 app[web.1]: io.configure(function () {  
-2015-01-11T19:22:19.489305+00:00 app[web.1]:    ^
-2015-01-11T19:22:19.491915+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:34:4)
-2015-01-11T19:22:19.491911+00:00 app[web.1]: TypeError: Object #<Server> has no method 'configure'
-2015-01-11T19:22:19.491916+00:00 app[web.1]:     at Module._compile (module.js:456:26)
-2015-01-11T19:22:19.491920+00:00 app[web.1]:     at Module.load (module.js:356:32)
-2015-01-11T19:22:19.491921+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
-2015-01-11T19:22:19.491923+00:00 app[web.1]:     at Module.require (module.js:364:17)
-2015-01-11T19:22:19.491924+00:00 app[web.1]:     at require (module.js:380:17)
-2015-01-11T19:22:19.491926+00:00 app[web.1]:     at Object.<anonymous> (/app/bin/www:7:11)
-2015-01-11T19:22:19.491927+00:00 app[web.1]:     at Module._compile (module.js:456:26)
-2015-01-11T19:22:19.491918+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
-2015-01-11T19:22:19.491929+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
-2015-01-11T19:22:19.501643+00:00 app[web.1]: 
-2015-01-11T19:22:20.390267+00:00 heroku[web.1]: Process exited with status 1
-2015-01-11T19:22:20.400304+00:00 heroku[web.1]: State changed from starting to crashed
-2015-01-11T19:22:37.616685+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tranquil-badlands-1388.herokuapp.com request_id=df514b8b-5747-4c45-82a8-e7f8c8a3c4a9 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
+2015-01-11T20:54:24.347330+00:00 heroku[web.1]: State changed from starting to crashed
+2015-01-11T20:54:24.340860+00:00 heroku[web.1]: Process exited with status 8
+2015-01-11T20:54:52.841204+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mighty-ocean-4223.herokuapp.com request_id=94c8e391-d528-4b18-8136-68213adba164 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
+2015-01-11T20:55:59.160610+00:00 heroku[api]: Release v16 created by ulises.card@gmail.com
+2015-01-11T20:55:59.160581+00:00 heroku[api]: Deploy ac8de57 by ulises.card@gmail.com
+2015-01-11T20:55:59.684958+00:00 heroku[web.1]: State changed from crashed to starting
+2015-01-11T20:56:01.494365+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-01-11T20:56:02.521407+00:00 app[web.1]: info: socket.io started
+2015-01-11T20:56:02.785563+00:00 heroku[web.1]: State changed from starting to up
+2015-01-11T20:57:40.787498+00:00 heroku[router]: at=info method=GET path="/" host=mighty-ocean-4223.herokuapp.com request_id=6ffabab1-2ba1-4741-9228-dbdb7a1d24a3 fwd="71.41.4.194" dyno=web.1 connect=2ms service=56ms status=200 bytes=2344
+2015-01-11T20:57:40.805109+00:00 app[web.1]: [0mGET / [32m200 [0m58.008 ms - 2148[0m
+2015-01-11T20:57:41.152502+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=9f865897-0d38-40c8-a3ca-b7cad0cb6f15 fwd="71.41.4.194" dyno=web.1 connect=2ms service=159ms status=500 bytes=2127
+2015-01-11T20:57:41.180826+00:00 heroku[router]: at=info method=GET path="/javascripts/lib/leaflet.js" host=mighty-ocean-4223.herokuapp.com request_id=a317b8c2-58e1-459e-8d39-e22d4338e290 fwd="71.41.4.194" dyno=web.1 connect=4ms service=48ms status=200 bytes=138148
+2015-01-11T20:57:41.172656+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=03b8456d-b6e6-43c1-9707-2b804e16faf3 fwd="71.41.4.194" dyno=web.1 connect=1ms service=40ms status=404 bytes=973
+2015-01-11T20:57:41.176614+00:00 app[web.1]: [0mGET /javascripts/application.js [32m200 [0m11.497 ms - 3192[0m
+2015-01-11T20:57:41.161307+00:00 app[web.1]: [0mGET /stylesheets/style.css [31m500 [0m155.622 ms - 1912[0m
+2015-01-11T20:57:41.173668+00:00 app[web.1]: [0mGET /socket.io/socket.io.js [33m404 [0m10.665 ms - 783[0m
+2015-01-11T20:57:41.184863+00:00 app[web.1]: [0mGET /javascripts/lib/leaflet.js [32m200 [0m20.456 ms - 137858[0m
+2015-01-11T20:57:41.188342+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=mighty-ocean-4223.herokuapp.com request_id=8fbd4604-2389-40a1-907c-0835ad8c7bc0 fwd="71.41.4.194" dyno=web.1 connect=14ms service=29ms status=200 bytes=3478
+2015-01-11T20:59:50.693670+00:00 heroku[api]: Release v17 created by ulises.card@gmail.com
+2015-01-11T20:59:50.693621+00:00 heroku[api]: Deploy 3aba6b7 by ulises.card@gmail.com
+2015-01-11T20:59:51.168758+00:00 heroku[web.1]: State changed from up to starting
+2015-01-11T20:59:53.136192+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-01-11T20:59:53.408440+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-01-11T20:59:54.278625+00:00 app[web.1]: info: socket.io started
+2015-01-11T20:59:54.465866+00:00 heroku[web.1]: State changed from starting to up
+2015-01-11T20:59:54.744983+00:00 heroku[web.1]: Process exited with status 143
+2015-01-11T21:00:08.619647+00:00 app[web.1]: [0mGET / [36m304 [0m28.067 ms - -[0m
+2015-01-11T21:00:08.620109+00:00 heroku[router]: at=info method=GET path="/" host=mighty-ocean-4223.herokuapp.com request_id=e4424f46-bf0a-4be9-b871-5e51fc8bcac4 fwd="71.41.4.194" dyno=web.1 connect=2ms service=32ms status=304 bytes=144
+2015-01-11T21:00:08.958135+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=29374b4f-5f82-4b85-9508-c796330a259b fwd="71.41.4.194" dyno=web.1 connect=1ms service=198ms status=500 bytes=2127
+2015-01-11T21:00:09.104242+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=mighty-ocean-4223.herokuapp.com request_id=f068860c-7f10-4374-9cbe-a2a34531ad5a fwd="71.41.4.194" dyno=web.1 connect=4ms service=7ms status=200 bytes=3478
+2015-01-11T21:00:08.957764+00:00 app[web.1]: [0mGET /stylesheets/style.css [31m500 [0m196.115 ms - 1912[0m
+2015-01-11T21:00:09.100188+00:00 app[web.1]: [0mGET /javascripts/application.js [32m200 [0m3.173 ms - 3192[0m
+2015-01-11T21:00:08.974574+00:00 app[web.1]: [0mGET /javascripts/lib/leaflet.js [32m200 [0m15.568 ms - 137858[0m
+2015-01-11T21:00:08.977178+00:00 heroku[router]: at=info method=GET path="/javascripts/lib/leaflet.js" host=mighty-ocean-4223.herokuapp.com request_id=34850066-90a0-42d1-a85b-4603dc076e33 fwd="71.41.4.194" dyno=web.1 connect=1ms service=21ms status=200 bytes=138148
+2015-01-11T21:00:09.913230+00:00 app[web.1]: debug: served static content /socket.io.js
+2015-01-11T21:00:10.047848+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=db2df469-fab6-4e85-ae89-55aa43789679 fwd="71.41.4.194" dyno=web.1 connect=46ms service=827ms status=200 bytes=74883
+2015-01-11T21:00:10.585268+00:00 app[web.1]: debug: client authorized
+2015-01-11T21:00:10.801623+00:00 app[web.1]: debug: setting request GET /socket.io/1/websocket/s7yVGdFBHT_QgtUny8Il
+2015-01-11T21:00:10.804592+00:00 app[web.1]: debug: client authorized for 
+2015-01-11T21:00:10.802322+00:00 app[web.1]: debug: set heartbeat interval for client s7yVGdFBHT_QgtUny8Il
+2015-01-11T21:00:10.588294+00:00 app[web.1]: info: handshake authorized s7yVGdFBHT_QgtUny8Il
+2015-01-11T21:00:10.810436+00:00 app[web.1]: debug: websocket writing 1::
+2015-01-11T21:00:10.595103+00:00 heroku[router]: at=info method=GET path="/socket.io/1/?t=1421010010085" host=mighty-ocean-4223.herokuapp.com request_id=3c18a354-b7a7-4337-a092-9e53992181d5 fwd="71.41.4.194" dyno=web.1 connect=2ms service=15ms status=200 bytes=211
+2015-01-11T21:00:10.985706+00:00 heroku[router]: at=info method=GET path="/images/marker-shadow.png" host=mighty-ocean-4223.herokuapp.com request_id=0f893356-34e5-48b7-9060-3b7138c988f7 fwd="71.41.4.194" dyno=web.1 connect=4ms service=5ms status=200 bytes=1922
+2015-01-11T21:00:11.001508+00:00 heroku[router]: at=info method=GET path="/images/marker-red.png" host=mighty-ocean-4223.herokuapp.com request_id=332038cb-9588-4b1b-9546-4851631221f5 fwd="71.41.4.194" dyno=web.1 connect=7ms service=15ms status=200 bytes=2215
+2015-01-11T21:00:10.978343+00:00 app[web.1]: [0mGET /images/marker-shadow.png [32m200 [0m2.321 ms - 1649[0m
+2015-01-11T21:00:10.983737+00:00 app[web.1]: [0mGET /images/marker-red.png [32m200 [0m1.876 ms - 1942[0m
+2015-01-11T21:00:35.804081+00:00 app[web.1]: debug: websocket writing 2::
+2015-01-11T21:00:35.804674+00:00 app[web.1]: debug: set heartbeat timeout for client s7yVGdFBHT_QgtUny8Il
+2015-01-11T21:00:35.803681+00:00 app[web.1]: debug: emitting heartbeat for client s7yVGdFBHT_QgtUny8Il
+2015-01-11T21:01:30.804053+00:00 heroku[router]: at=error code=H15 desc="Idle connection" method=GET path="/socket.io/1/websocket/s7yVGdFBHT_QgtUny8Il" host=mighty-ocean-4223.herokuapp.com request_id=0c586a7d-6e1b-4dd2-8a78-cc54202964ec fwd="71.41.4.194" dyno=web.1 connect=6ms service=80007ms status=503 bytes=139
+2015-01-11T21:01:30.807128+00:00 app[web.1]: debug: set close timeout for client s7yVGdFBHT_QgtUny8Il
+2015-01-11T21:01:30.807964+00:00 app[web.1]: debug: cleared heartbeat timeout for client s7yVGdFBHT_QgtUny8Il
+2015-01-11T21:01:30.807742+00:00 app[web.1]: debug: cleared close timeout for client s7yVGdFBHT_QgtUny8Il
+2015-01-11T21:01:30.806518+00:00 app[web.1]: info: transport end (socket end)
+2015-01-11T21:01:30.808521+00:00 app[web.1]: debug: discarding transport
+2015-01-11T21:08:02.197089+00:00 heroku[api]: Deploy 70582eb by ulises.card@gmail.com
+2015-01-11T21:08:02.197089+00:00 heroku[api]: Release v18 created by ulises.card@gmail.com
+2015-01-11T21:08:02.280435+00:00 heroku[web.1]: State changed from up to starting
+2015-01-11T21:08:04.686693+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-01-11T21:08:04.091768+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-01-11T21:08:05.142771+00:00 heroku[web.1]: Process exited with status 143
+2015-01-11T21:08:05.933425+00:00 app[web.1]: 
+2015-01-11T21:08:05.934051+00:00 app[web.1]: var io = require('socket.io')(server);
+2015-01-11T21:08:05.937102+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-01-11T21:08:05.937100+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:28:30)
+2015-01-11T21:08:05.937097+00:00 app[web.1]: TypeError: object is not a function
+2015-01-11T21:08:05.937105+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-01-11T21:08:05.937108+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-01-11T21:08:05.937104+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-01-11T21:08:05.933534+00:00 app[web.1]: /app/app.js:28
+2015-01-11T21:08:05.937106+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-01-11T21:08:05.937110+00:00 app[web.1]:     at Object.<anonymous> (/app/bin/www:7:11)
+2015-01-11T21:08:05.937109+00:00 app[web.1]:     at require (module.js:380:17)
+2015-01-11T21:08:05.934104+00:00 app[web.1]:                              ^
+2015-01-11T21:08:05.937112+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-01-11T21:08:05.937113+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-01-11T21:08:06.671426+00:00 heroku[web.1]: Process exited with status 8
+2015-01-11T21:08:06.681169+00:00 heroku[web.1]: State changed from starting to crashed
+2015-01-11T21:08:06.681823+00:00 heroku[web.1]: State changed from crashed to starting
+2015-01-11T21:08:08.630370+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-01-11T21:08:10.220366+00:00 app[web.1]: /app/app.js:28
+2015-01-11T21:08:10.220286+00:00 app[web.1]: 
+2015-01-11T21:08:10.220747+00:00 app[web.1]:                              ^
+2015-01-11T21:08:10.220711+00:00 app[web.1]: var io = require('socket.io')(server);
+2015-01-11T21:08:10.224146+00:00 app[web.1]: TypeError: object is not a function
+2015-01-11T21:08:10.224149+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:28:30)
+2015-01-11T21:08:10.224153+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-01-11T21:08:10.224151+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-01-11T21:08:10.224156+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-01-11T21:08:10.224155+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-01-11T21:08:10.224158+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-01-11T21:08:10.224160+00:00 app[web.1]:     at require (module.js:380:17)
+2015-01-11T21:08:10.224161+00:00 app[web.1]:     at Object.<anonymous> (/app/bin/www:7:11)
+2015-01-11T21:08:10.224163+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-01-11T21:08:10.224164+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-01-11T21:08:11.001006+00:00 heroku[web.1]: State changed from starting to crashed
+2015-01-11T21:08:10.986903+00:00 heroku[web.1]: Process exited with status 8
+2015-01-11T21:08:20.740082+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mighty-ocean-4223.herokuapp.com request_id=758d6cc8-638d-40be-a187-e68c9517077c fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
+2015-01-11T21:08:23.054411+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mighty-ocean-4223.herokuapp.com request_id=f92a5f5f-5aac-4f4c-8a90-e033cdc793da fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
