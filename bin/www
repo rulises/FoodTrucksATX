@@ -21,8 +21,6 @@ app.set('port', port);
 
 var server = http.createServer(app);
 
-
-var Static = require('node-static');
 var io = require('socket.io').listen(server);
 
 // delete to see more logs from sockets
@@ -34,7 +32,6 @@ io.sockets.on('connection', function (socket) {
         socket.broadcast.emit('load:coords', data);
     });
 });
-
 
 /**
  * Listen on provided port, on all network interfaces.

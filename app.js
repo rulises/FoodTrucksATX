@@ -26,15 +26,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
-/*var files = new Static.Server('./public');
-
-
-function handler (req, res) {
-    req.on('end', function() {
-        app.serve(req, res);
-    }).resume();
-}*/
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
