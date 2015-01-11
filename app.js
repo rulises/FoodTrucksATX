@@ -30,7 +30,7 @@ app.use('/users', users);
 var http = require('http');
 var server = http.createServer(app);
 
-var io = require('socket.io').listen(server);
+var io = require('socket.io').listen(app);
 
 io.configure('production', function () {  
     io.set('log level', 1);
