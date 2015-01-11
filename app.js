@@ -28,9 +28,9 @@ app.use('/', routes);
 app.use('/users', users);
 
 var http = require('http');
-var server = app.createServer();
+var server = http.createServer(app);
 
-var io = require('socket.io').listen(app);
+var io = require('socket.io').listen(server);
 
 io.configure('production', function () {  
     io.set('log level', 1);
