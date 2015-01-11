@@ -24,14 +24,8 @@ app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-var server = require('http').Server(app);
+var server = require('http').Server(app());
 var io = require('socket.io').listen(server);
-
-io.configure('production', function () {  
-    io.set('log level', 1);
-    io.set("transports", ["xhr-polling"]); 
-    io.set("polling duration", 10); 
-});
 
 io.on('connection', function (socket) {
     socket.on('send:coords', function (data) {
