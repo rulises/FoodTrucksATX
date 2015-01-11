@@ -24,8 +24,24 @@ app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
+var server = require('http').Server(app);
+var io = require('socket.io')(server);
+
+io.configure('production', function () {  
+    io.set('log level', 1);
+    io.set("transports", ["xhr-polling"]); 
+    io.set("polling duration", 10); 
+});
+
+io.on('connection', function (socket) {
+    socket.on('send:coords', function (data) {
+        socket.broadcast.emit('load:coords', data);
+    });
+});
+
+server.listen(80);
+
 app.use('/', routes);
-app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
