@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var http = require("http")
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -27,22 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
-var server = http.createServer(app)
 
-var io = require('socket.io').listen(server);
-
-io.configure('production', function () {  
-    io.set('log level', 1);
-    io.set("transports", ["xhr-polling"]); 
-    io.set("polling duration", 10); 
-});
-
-io.sockets.on('connection', function (socket) {
-
-    socket.on('send:coords', function (data) {
-        socket.broadcast.emit('load:coords', data);
-    });
-});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
