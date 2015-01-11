@@ -21,16 +21,9 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-var files = express.static(path.join(__dirname, 'public'));
-app.use(files);
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-
-function handler (request, response) {
-    request.on('end', function() {
-        files.serve(request, response);
-    }).resume();
-}
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
