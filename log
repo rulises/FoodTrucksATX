@@ -1,0 +1,101 @@
+2015-01-11T18:07:08.207406+00:00 app[web.1]: npm ERR! npm -v 1.4.28
+2015-01-11T18:07:08.209773+00:00 app[web.1]: npm ERR! Additional logging details can be found in:
+2015-01-11T18:07:08.207209+00:00 app[web.1]: npm ERR! node -v v0.10.35
+2015-01-11T18:07:08.210091+00:00 app[web.1]: npm ERR! not ok code 0
+2015-01-11T18:07:08.209879+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2015-01-11T18:07:08.433283+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-01-11T18:07:08.930406+00:00 heroku[web.1]: Process exited with status 1
+2015-01-11T18:07:08.892944+00:00 heroku[web.1]: State changed from starting to crashed
+2015-01-11T18:07:08.892944+00:00 heroku[web.1]: State changed from crashed to starting
+2015-01-11T18:07:09.557030+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=websocket&sid=bSb7H1ESmIQwkkn8AAAA" host=tranquil-badlands-1388.herokuapp.com request_id=ef676716-d5e3-4d4f-afa3-f51874fad51b fwd="71.41.4.194" dyno=web.1 connect=1ms service=269809ms status=101 bytes=129
+2015-01-11T18:07:10.397939+00:00 heroku[web.1]: Process exited with status 143
+2015-01-11T18:07:11.030692+00:00 heroku[web.1]: Starting process with command `npm start`
+2015-01-11T18:07:12.449220+00:00 app[web.1]: > node ./bin/www
+2015-01-11T18:07:12.449221+00:00 app[web.1]: 
+2015-01-11T18:07:12.449198+00:00 app[web.1]: 
+2015-01-11T18:07:12.449218+00:00 app[web.1]: > FoodTrucksATX@0.0.0 start /app
+2015-01-11T18:07:13.008971+00:00 app[web.1]: 
+2015-01-11T18:07:13.009051+00:00 app[web.1]: /app/node_modules/socket.io/lib/index.js:199
+2015-01-11T18:07:13.009308+00:00 app[web.1]:     throw new Error(msg);
+2015-01-11T18:07:13.009315+00:00 app[web.1]:           ^
+2015-01-11T18:07:13.010915+00:00 app[web.1]: Error: You are trying to attach socket.io to an expressrequest handler function. Please pass a http.Server instance.
+2015-01-11T18:07:13.010917+00:00 app[web.1]:     at Server.listen.Server.attach (/app/node_modules/socket.io/lib/index.js:199:11)
+2015-01-11T18:07:13.010919+00:00 app[web.1]:     at new Server (/app/node_modules/socket.io/lib/index.js:51:17)
+2015-01-11T18:07:13.010921+00:00 app[web.1]:     at Function.Server (/app/node_modules/socket.io/lib/index.js:39:41)
+2015-01-11T18:07:13.010924+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-01-11T18:07:13.010925+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-01-11T18:07:13.010922+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:31:31)
+2015-01-11T18:07:13.010928+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-01-11T18:07:13.010930+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-01-11T18:07:13.010927+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-01-11T18:07:13.010931+00:00 app[web.1]:     at require (module.js:380:17)
+2015-01-11T18:07:13.023991+00:00 app[web.1]: 
+2015-01-11T18:07:13.029859+00:00 app[web.1]: npm ERR! FoodTrucksATX@0.0.0 start: `node ./bin/www`
+2015-01-11T18:07:13.030383+00:00 app[web.1]: npm ERR! 
+2015-01-11T18:07:13.030552+00:00 app[web.1]: npm ERR! Failed at the FoodTrucksATX@0.0.0 start script.
+2015-01-11T18:07:13.031508+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2015-01-11T18:07:13.031159+00:00 app[web.1]: npm ERR! This is most likely a problem with the FoodTrucksATX package,
+2015-01-11T18:07:13.031334+00:00 app[web.1]: npm ERR! not with npm itself.
+2015-01-11T18:07:13.031679+00:00 app[web.1]: npm ERR!     node ./bin/www
+2015-01-11T18:07:13.031853+00:00 app[web.1]: npm ERR! You can get their info via:
+2015-01-11T18:07:13.030144+00:00 app[web.1]: npm ERR! Exit status 8
+2015-01-11T18:07:13.033058+00:00 app[web.1]: npm ERR! command "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2015-01-11T18:07:13.032219+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2015-01-11T18:07:13.032796+00:00 app[web.1]: npm ERR! System Linux 3.8.11-ec2
+2015-01-11T18:07:13.033292+00:00 app[web.1]: npm ERR! cwd /app
+2015-01-11T18:07:13.033536+00:00 app[web.1]: npm ERR! node -v v0.10.35
+2015-01-11T18:07:13.032045+00:00 app[web.1]: npm ERR!     npm owner ls FoodTrucksATX
+2015-01-11T18:07:13.034028+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2015-01-11T18:07:13.036222+00:00 app[web.1]: npm ERR! Additional logging details can be found in:
+2015-01-11T18:07:13.036048+00:00 app[web.1]: npm ERR! 
+2015-01-11T18:07:13.036391+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2015-01-11T18:07:13.033779+00:00 app[web.1]: npm ERR! npm -v 1.4.28
+2015-01-11T18:07:13.037241+00:00 app[web.1]: npm ERR! not ok code 0
+2015-01-11T18:07:13.790022+00:00 heroku[web.1]: Process exited with status 1
+2015-01-11T18:07:13.812916+00:00 heroku[web.1]: State changed from starting to crashed
+2015-01-11T18:07:14.641036+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1420999630765-3" host=tranquil-badlands-1388.herokuapp.com request_id=7bdff4de-33c2-454c-b681-816607f1bd8c fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
+2015-01-11T18:07:17.301015+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1420999636763-4" host=tranquil-badlands-1388.herokuapp.com request_id=e804b3a1-e397-4749-aaf9-7c694082a1b1 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
+2015-01-11T18:07:21.777006+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1420999640761-5" host=tranquil-badlands-1388.herokuapp.com request_id=5aeb54c9-ee05-48d7-b04e-c92c8e1cbe5d fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
+2015-01-11T18:07:26.305250+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/socket.io/?EIO=3&transport=polling&t=1420999645762-6" host=tranquil-badlands-1388.herokuapp.com request_id=ab8fb4e3-2972-4d76-a3e9-04c9a4d54dea fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
+2015-01-11T18:07:32.298090+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tranquil-badlands-1388.herokuapp.com request_id=da45f807-491d-4b70-8283-9750a53ad793 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
+2015-01-11T18:07:34.263818+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tranquil-badlands-1388.herokuapp.com request_id=e689cf76-a88a-4619-8f02-69489a703a18 fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
+2015-01-11T18:12:31.830418+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tranquil-badlands-1388.herokuapp.com request_id=ebf254bd-5aee-4ace-9689-42b2901f586d fwd="71.41.4.194" dyno= connect= service= status=503 bytes=
+2015-01-11T18:13:48.503785+00:00 heroku[api]: Deploy 64e1177 by ulises.card@gmail.com
+2015-01-11T18:13:48.503816+00:00 heroku[api]: Release v15 created by ulises.card@gmail.com
+2015-01-11T18:13:50.841320+00:00 heroku[web.1]: Starting process with command `npm start`
+2015-01-11T18:13:48.689071+00:00 heroku[web.1]: State changed from crashed to starting
+2015-01-11T18:13:52.084614+00:00 app[web.1]: 
+2015-01-11T18:13:52.084629+00:00 app[web.1]: > FoodTrucksATX@0.0.0 start /app
+2015-01-11T18:13:52.084631+00:00 app[web.1]: > node ./bin/www
+2015-01-11T18:13:52.084633+00:00 app[web.1]: 
+2015-01-11T18:13:52.793192+00:00 app[web.1]: Option log level is not valid. Please refer to the README.
+2015-01-11T18:13:52.934049+00:00 heroku[web.1]: State changed from starting to up
+2015-01-11T18:15:58.535332+00:00 heroku[router]: at=info method=GET path="/" host=tranquil-badlands-1388.herokuapp.com request_id=c70e63da-1e5a-44b3-b44f-5d9fafea9b04 fwd="71.41.4.194" dyno=web.1 connect=2ms service=86ms status=200 bytes=2282
+2015-01-11T18:15:58.553883+00:00 app[web.1]: [0mGET / [32m200 [0m99.028 ms - 2086[0m
+2015-01-11T18:15:58.738592+00:00 heroku[router]: at=info method=GET path="/javascripts/lib/leaflet.js" host=tranquil-badlands-1388.herokuapp.com request_id=ad88ac3b-5ab9-49f3-8382-3271420a5576 fwd="71.41.4.194" dyno=web.1 connect=5ms service=28ms status=200 bytes=138148
+2015-01-11T18:15:58.873242+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=tranquil-badlands-1388.herokuapp.com request_id=f371d15d-1eb3-43c8-9c89-0f77efc4ca67 fwd="71.41.4.194" dyno=web.1 connect=2ms service=6ms status=304 bytes=85
+2015-01-11T18:15:58.922464+00:00 app[web.1]: [0mGET /javascripts/application.js [32m200 [0m2.060 ms - 3192[0m
+2015-01-11T18:15:58.734225+00:00 app[web.1]: [0mGET /javascripts/lib/leaflet.js [32m200 [0m25.018 ms - 137858[0m
+2015-01-11T18:15:58.941663+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=tranquil-badlands-1388.herokuapp.com request_id=ae5c9bd2-8751-4d2c-b0c0-d03a76cc50e0 fwd="71.41.4.194" dyno=web.1 connect=14ms service=13ms status=200 bytes=3478
+2015-01-11T18:15:59.711046+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=1421000159265-0" host=tranquil-badlands-1388.herokuapp.com request_id=4897a815-e986-42b5-a8c6-1ae388a50f85 fwd="71.41.4.194" dyno=web.1 connect=2ms service=13ms status=200 bytes=306
+2015-01-11T18:15:59.811823+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=1421000159375-1&sid=DY0aNl7z8zQyxGoPAAAA" host=tranquil-badlands-1388.herokuapp.com request_id=b9188b56-5214-4495-81b4-ea114911cc6c fwd="71.41.4.194" dyno=web.1 connect=9ms service=6ms status=200 bytes=208
+2015-01-11T18:16:00.168000+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=1421000159461-2&sid=DY0aNl7z8zQyxGoPAAAA" host=tranquil-badlands-1388.herokuapp.com request_id=697d7887-5d6f-417b-b4b3-88d4d63ae35d fwd="71.41.4.194" dyno=web.1 connect=6ms service=277ms status=200 bytes=207
+2015-01-11T18:16:00.119507+00:00 heroku[router]: at=info method=GET path="/images/marker-red.png" host=tranquil-badlands-1388.herokuapp.com request_id=e44cd71d-c5a4-4dc1-8d28-a6e414bb2bb1 fwd="71.41.4.194" dyno=web.1 connect=3ms service=4ms status=200 bytes=2215
+2015-01-11T18:16:00.116873+00:00 app[web.1]: [0mGET /images/marker-red.png [32m200 [0m1.633 ms - 1942[0m
+2015-01-11T18:16:00.116299+00:00 app[web.1]: [0mGET /images/marker-shadow.png [32m200 [0m2.005 ms - 1649[0m
+2015-01-11T18:16:00.119475+00:00 heroku[router]: at=info method=GET path="/images/marker-shadow.png" host=tranquil-badlands-1388.herokuapp.com request_id=78629ebf-0b39-475e-874d-fb4e8146d168 fwd="71.41.4.194" dyno=web.1 connect=2ms service=6ms status=200 bytes=1922
+2015-01-11T18:19:18.271275+00:00 heroku[router]: at=info method=GET path="/" host=tranquil-badlands-1388.herokuapp.com request_id=f5fef746-0fc1-4d47-87d3-c042bc33b701 fwd="71.41.4.194" dyno=web.1 connect=1ms service=15ms status=304 bytes=144
+2015-01-11T18:19:18.270452+00:00 app[web.1]: [0mGET / [36m304 [0m12.325 ms - -[0m
+2015-01-11T18:19:18.464660+00:00 heroku[router]: at=info method=GET path="/javascripts/lib/leaflet.js" host=tranquil-badlands-1388.herokuapp.com request_id=08c1dd60-bd24-49d9-8661-6fc54e9d0f39 fwd="71.41.4.194" dyno=web.1 connect=1ms service=10ms status=304 bytes=238
+2015-01-11T18:19:18.380650+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=websocket&sid=DY0aNl7z8zQyxGoPAAAA" host=tranquil-badlands-1388.herokuapp.com request_id=0f1d3f24-84cb-420b-a07f-a7eec84bd061 fwd="71.41.4.194" dyno=web.1 connect=1ms service=198394ms status=101 bytes=129
+2015-01-11T18:19:18.590049+00:00 app[web.1]: [0mGET /javascripts/application.js [36m304 [0m0.861 ms - -[0m
+2015-01-11T18:19:18.460241+00:00 app[web.1]: [0mGET /javascripts/lib/leaflet.js [36m304 [0m3.760 ms - -[0m
+2015-01-11T18:19:18.591452+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=tranquil-badlands-1388.herokuapp.com request_id=b6bc4660-8b0a-4c71-ba02-ca2dd89aeb20 fwd="71.41.4.194" dyno=web.1 connect=1ms service=3ms status=304 bytes=236
+2015-01-11T18:19:18.538512+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=tranquil-badlands-1388.herokuapp.com request_id=39840b42-cbe7-47e1-ac26-af3db4aecb6b fwd="71.41.4.194" dyno=web.1 connect=1ms service=3ms status=304 bytes=85
+2015-01-11T18:19:18.668735+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=1421000358244-0" host=tranquil-badlands-1388.herokuapp.com request_id=aefbebc2-b712-4b98-9a9d-1c536cfc71ab fwd="71.41.4.194" dyno=web.1 connect=1ms service=9ms status=200 bytes=306
+2015-01-11T18:19:18.749611+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=1421000358325-1&sid=_n722K8b2GJ2TfvWAAAB" host=tranquil-badlands-1388.herokuapp.com request_id=5204fde7-9f99-41bb-9bce-128be57d1fbc fwd="71.41.4.194" dyno=web.1 connect=1ms service=4ms status=200 bytes=208
+2015-01-11T18:19:18.811457+00:00 heroku[router]: at=info method=GET path="/images/marker-shadow.png" host=tranquil-badlands-1388.herokuapp.com request_id=9acf2763-2db9-4865-a934-c8ee40eef18a fwd="71.41.4.194" dyno=web.1 connect=1ms service=9ms status=304 bytes=236
+2015-01-11T18:19:18.808633+00:00 app[web.1]: [0mGET /images/marker-shadow.png [36m304 [0m3.583 ms - -[0m
+2015-01-11T18:19:18.808081+00:00 app[web.1]: [0mGET /images/marker-red.png [36m304 [0m5.048 ms - -[0m
+2015-01-11T18:19:18.809155+00:00 heroku[router]: at=info method=GET path="/images/marker-red.png" host=tranquil-badlands-1388.herokuapp.com request_id=6430e360-a1a9-4691-93fb-3146141546e0 fwd="71.41.4.194" dyno=web.1 connect=1ms service=9ms status=304 bytes=236
+2015-01-11T18:19:19.467116+00:00 heroku[router]: at=info method=GET path="/socket.io/?EIO=3&transport=polling&t=1421000358401-2&sid=_n722K8b2GJ2TfvWAAAB" host=tranquil-badlands-1388.herokuapp.com request_id=b25aa7de-2899-4ac0-ba21-9a7c306a56cb fwd="71.41.4.194" dyno=web.1 connect=1ms service=648ms status=200 bytes=207
