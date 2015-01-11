@@ -23,20 +23,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-var server = require('http').Server(app);
-var io = require('socket.io').listen(server);
-
-server.listen(80);
-
-io.on('connection', function (socket) {
-    io.set("transports", ["xhr-polling"]);
-    io.set("polling duration", 10);
-    socket.on('send:coords', function (data) {
-        socket.broadcast.emit('load:coords', data);
-    });
-});
-
-
 app.use('/', routes);
 
 // catch 404 and forward to error handler
