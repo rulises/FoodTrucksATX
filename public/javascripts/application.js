@@ -1,7 +1,8 @@
 $(function() {
 	// generate unique user id
 	var userId = Math.random().toString(16).substring(2,15);
-	var socket = io.connect('/');
+	//var socket = io.connect('/');
+	var socket = io.connect('http://localhost');
 	var map;
 
 	var info = $('#infobox');
