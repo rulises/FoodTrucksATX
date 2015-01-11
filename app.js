@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-var server = require('http').Server(app());
+var server = require('http').Server(app);
 var io = require('socket.io').listen(server);
 
 server.listen(80);
