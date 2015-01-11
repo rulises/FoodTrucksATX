@@ -3,35 +3,29 @@
 <head>
     <% include partials/head %>
 </head>
-<body class="container">
+<body>
 
-    <header>
-        <% include partials/header %>
-    </header>
+    <div class="wrapper">
+      <header>
+        <h1>Real-Time Geolocation Service with Node.js</h1>
+        <div class="description">Using HTML5 Geolocation API and Web Sockets to show connected locations.</div>
+      </header>
 
-    <main>
-        <div class="row">
-            <div class="col-sm-8">
-            
-                <div class="jumbotron">
-                    <h1>This is great</h1>
-                    <p>Welcome to templating using EJS</p>
-                </div>
-                
-            </div>
-            <div class="col-sm-4">
-                
-                <div class="well">
-                    <h3>Look I'm A Sidebar!</h3>
-                </div>
-
-            </div>
+        <div class="app">
+            <div id="infobox" class="infobox"></div>
+            <div id="map">To get this app to work you need to share your geolocation.</div>
         </div>
-    </main>
+    </div>
+
 
     <footer>
         <% include partials/footer %>
     </footer>
-    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="./javascripts/lib/leaflet.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./javascripts/application.js"></script>
+
 </body>
 </html>
