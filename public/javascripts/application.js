@@ -68,7 +68,7 @@ $(function() {
 		}).addTo(map);
 
 		// set map bounds
-		map.fitWorld();
+		//map.fitWorld();
 		userMarker.addTo(map);
 		userMarker.bindPopup('<p>You are there! Your ID is ' + userId + '</p>').openPopup();
 
