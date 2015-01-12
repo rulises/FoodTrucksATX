@@ -62,7 +62,7 @@ $(function() {
 			zoom: 13
 		});
 
-		L.tileLayer('https://{s}.tiles.mapbox.com/v3/examples.map-i87786ca/{z}/{x}/{y}.png', {
+		L.tileLayer('https://{s}.tiles.mapbox.com/v3/examples.map-zr0njcqy/{z}/{x}/{y}.png', {
 		 maxZoom: 18, 
 		 detectRetina: true 
 		}).addTo(map);
