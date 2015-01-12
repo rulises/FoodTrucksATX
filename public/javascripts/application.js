@@ -57,9 +57,15 @@ $(function() {
 		// userMarker = L.marker([51.45, 30.050], { icon: redIcon });
 
 		// load leaflet map
-		map = L.map('map');
+		map = L.map('map',{
+			center: [30.2500, 97.7500],
+			zoom: 13
+		});
 
-		L.tileLayer('https://{s}.tiles.mapbox.com/v3/examples.map-i87786ca/{z}/{x}/{y}.png', { maxZoom: 18, detectRetina: true }).addTo(map);
+		L.tileLayer('https://{s}.tiles.mapbox.com/v3/examples.map-i87786ca/{z}/{x}/{y}.png', {
+		 maxZoom: 18, 
+		 detectRetina: true 
+		}).addTo(map);
 
 		// set map bounds
 		map.fitWorld();
