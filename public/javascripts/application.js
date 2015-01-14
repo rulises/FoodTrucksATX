@@ -21,6 +21,7 @@ $(function() {
 	});
 	var redIcon = new tinyIcon({ iconUrl: '../images/marker-red.png' });
 	var yellowIcon = new tinyIcon({ iconUrl: '../images/marker-yellow.png' });
+	var places = "{'results' : [   {'geometry' : {'location' : {'lat' : 30.26882,'lng' : -97.742289 }},'name' : 'Kebabalicious','rating' : 4.5,'vicinity' : '621 Congress Avenue, Austin'},{'geometry' : {'location' : {'lat' : 30.267818,'lng' : -97.73890900000001}},'name' : 'Llama's Peruvian Creole (Food Trailer)','rating' : 4.5,'vicinity' : '611 Trinity Street, Austin'}]}"
 
 	var sentData = {};
 
@@ -66,19 +67,15 @@ $(function() {
 		 maxZoom: 18, 
 		 detectRetina: true 
 		}).addTo(map);
-
+		var jsonData = JSON.parse(places);
+		for (var i = 0; i < jsonData.results.length; i++) {
+		    var place = jsonData.results[i].geometry.location;
+			var marker = L.marker([place.lat, place.lng], { icon: yellowIcon }).addTo(map);
+		}
 		// set map bounds
 		//map.fitWorld();
 		userMarker.addTo(map);
 		userMarker.bindPopup('<p>You are there! Your ID is ' + userId + '</p>').openPopup();
-
-		var places = require('./curatedPlaces.json')
-		var jsonData = JSON.parse(places);
-		for (var i = 0; i < jsonData.results.length; i++) {
-		    var place = jsonData.results[i];
-		    var loc = result.geometry.location;
-			var marker = L.marker([loc.lat, loc.lng], { icon: yellowIcon }).addTo(map);
-		}
 
 	// handle geolocation api errors
 	function positionError(error) {
