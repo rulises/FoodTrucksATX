@@ -21,7 +21,6 @@ $(function() {
 	});
 	var redIcon = new tinyIcon({ iconUrl: '../images/marker-red.png' });
 	var yellowIcon = new tinyIcon({ iconUrl: '../images/marker-yellow.png' });
-	var places = "{'results' : [   {'geometry' : {'location' : {'lat' : 30.26882,'lng' : -97.742289 }},'name' : 'Kebabalicious','rating' : 4.5,'vicinity' : '621 Congress Avenue, Austin'},{'geometry' : {'location' : {'lat' : 30.267818,'lng' : -97.73890900000001}},'name' : 'Llama's Peruvian Creole (Food Trailer)','rating' : 4.5,'vicinity' : '611 Trinity Street, Austin'}]}"
 
 	var sentData = {};
 
@@ -72,38 +71,6 @@ $(function() {
 		//map.fitWorld();
 		userMarker.addTo(map);
 		userMarker.bindPopup('<p>You are there! Your ID is ' + userId + '</p>').openPopup();
-
-	// handle geolocation api errors
-	function positionError(error) {
-		var errors = {
-			1: 'Authorization fails', // permission denied
-			2: 'Can\'t detect your location', //position unavailable
-			3: 'Connection timeout' // timeout
-		};
-		showError('Error:' + errors[error.code]);
-	}
-
-	function showError(msg) {
-		info.addClass('error').text(msg);
-
-		doc.click(function() {
-			info.removeClass('error');
-		});
-	}
-
-	// delete inactive users every 15 sec
-	setInterval(function() {
-		for (var ident in connects){
-			if ($.now() - connects[ident].updated > 15000) {
-				delete connects[ident];
-				map.removeLayer(markers[ident]);
-			}
-		}
-	}, 15000);
-});
-
-
-
 
 		var emit = $.now();
 		// send coords on when user is active
