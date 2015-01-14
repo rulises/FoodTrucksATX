@@ -67,11 +67,7 @@ $(function() {
 		 maxZoom: 18, 
 		 detectRetina: true 
 		}).addTo(map);
-		var jsonData = JSON.parse(places);
-		for (var i = 0; i < jsonData.results.length; i++) {
-		    var place = jsonData.results[i].geometry.location;
-			var marker = L.marker([place.lat, place.lng], { icon: yellowIcon }).addTo(map);
-		}
+
 		// set map bounds
 		//map.fitWorld();
 		userMarker.addTo(map);
