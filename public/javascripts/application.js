@@ -72,6 +72,46 @@ $(function() {
 		userMarker.addTo(map);
 		userMarker.bindPopup('<p>You are there! Your ID is ' + userId + '</p>').openPopup();
 
+		var places = require('./curatedPlaces.json')
+		var jsonData = JSON.parse(places);
+		for (var i = 0; i < jsonData.results.length; i++) {
+		    var place = jsonData.results[i];
+		    var loc = result.geometry.location;
+			var marker = L.marker([loc.lat, loc.lng], { icon: yellowIcon }).addTo(map);
+		}
+
+	// handle geolocation api errors
+	function positionError(error) {
+		var errors = {
+			1: 'Authorization fails', // permission denied
+			2: 'Can\'t detect your location', //position unavailable
+			3: 'Connection timeout' // timeout
+		};
+		showError('Error:' + errors[error.code]);
+	}
+
+	function showError(msg) {
+		info.addClass('error').text(msg);
+
+		doc.click(function() {
+			info.removeClass('error');
+		});
+	}
+
+	// delete inactive users every 15 sec
+	setInterval(function() {
+		for (var ident in connects){
+			if ($.now() - connects[ident].updated > 15000) {
+				delete connects[ident];
+				map.removeLayer(markers[ident]);
+			}
+		}
+	}, 15000);
+});
+
+
+
+
 		var emit = $.now();
 		// send coords on when user is active
 		doc.on('mousemove', function() {
