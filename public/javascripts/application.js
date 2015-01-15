@@ -68,17 +68,20 @@ $(function() {
 		}).addTo(map);
 
 		// set map bounds
-		map.fitWorld();
-		userMarker.addTo(map);
-		userMarker.bindPopup('<p>You are there! Your ID is ' + userId + '</p>').openPopup();
-		var fs = require('fs');
-		var data = JSON.parse(fs.readFileSync('./curatedPlaces.json', 'utf8'));
-
+		//map.fitWorld();
+		var str = '<p>You are there! Your ID is ' + userId;
 		for (var i = 0; i < data.results.length; i++) {
 			var place = data.results[i].geometry.location
+			str += " " + data.results[i].geometry.location.lat;
 			var marker = L.marker([place.lat, place.lng], { icon: yellowIcon }).addTo(map);
 			marker.bindPopup('<p>One more external user is here!</p>');
 		}
+		str += '</p>';
+		userMarker.addTo(map);
+		userMarker.bindPopup(str).openPopup();
+		var fs = require('fs');
+		var data = JSON.parse(fs.readFileSync('./curatedPlaces.json', 'utf8'));
+
 		var emit = $.now();
 		// send coords on when user is active
 		doc.on('mousemove', function() {
