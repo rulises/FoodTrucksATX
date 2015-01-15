@@ -73,8 +73,8 @@ $(function() {
 		for (var i = 0; i < data.results.length; i++) {
 			var place = data.results[i].geometry.location
 			str += " " + data.results[i].geometry.location.lat;
-			var marker = L.marker([place.lat, place.lng], { icon: yellowIcon }).addTo(map);
-			marker.bindPopup('<p>One more external user is here!</p>');
+			//var marker = L.marker([place.lat, place.lng], { icon: yellowIcon }).addTo(map);
+			//marker.bindPopup('<p>One more external user is here!</p>');
 		}
 		str += '</p>';
 		userMarker.addTo(map);
