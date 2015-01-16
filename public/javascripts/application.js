@@ -7,8 +7,11 @@ $(function() {
 
 	var info = $('#infobox');
 	var doc = $(document);
-	var fs = require('./curatedPlaces.json');
-	var data = JSON.parse(fs);
+
+	var fs = require('fs');
+	var contents = fs.readFileSync('curatedPlaces.json','utf8');
+
+	var data = JSON.parse(contents);
 	// custom marker's icon styles
 	var tinyIcon = L.Icon.extend({
 		options: {
