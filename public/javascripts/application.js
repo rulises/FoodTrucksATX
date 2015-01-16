@@ -69,9 +69,10 @@ $(function() {
 
 		// set map bounds
 		//map.fitWorld();
-				var fs = require('fs');
-		var data = JSON.parse(fs.readFileSync('./curatedPlaces.json', 'utf8'));
+
 		var str = '<p>You are there! Your ID is ' + userId;
+		var fs = require('./curatedPlaces.json');
+		var data = JSON.parse(fs);
 		for (var i = 0; i < data.results.length; i++) {
 			var place = data.results[i].geometry.location
 			str += ' ' + data.results[i].geometry.location.lat;
