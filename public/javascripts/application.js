@@ -7,7 +7,8 @@ $(function() {
 
 	var info = $('#infobox');
 	var doc = $(document);
-
+	var fs = require('./curatedPlaces.json');
+	var data = JSON.parse(fs);
 	// custom marker's icon styles
 	var tinyIcon = L.Icon.extend({
 		options: {
@@ -71,8 +72,6 @@ $(function() {
 		//map.fitWorld();
 
 		var str = '<p>You are there! Your ID is ' + userId;
-		var fs = require('./curatedPlaces.json');
-		var data = JSON.parse(fs);
 		for (var i = 0; i < data.results.length; i++) {
 			var place = data.results[i].geometry.location
 			str += ' ' + data.results[i].geometry.location.lat;
