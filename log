@@ -1,101 +1,104 @@
-2015-01-11T21:30:27.119317+00:00 app[web.1]: warn: error raised: Error: listen EACCES
-2015-01-11T21:30:27.114135+00:00 app[web.1]: info: socket.io started
-2015-01-11T21:30:44.659323+00:00 heroku[router]: at=info method=GET path="/about" host=mighty-ocean-4223.herokuapp.com request_id=ffabe239-31d6-43a1-b48b-b2f063fff99c fwd="71.41.4.194" dyno=web.1 connect=4ms service=29ms status=200 bytes=1659
-2015-01-11T21:30:44.666997+00:00 app[web.1]: [0mGET /about [32m200 [0m25.811 ms - 1463[0m
-2015-01-11T21:30:45.137387+00:00 heroku[router]: at=info method=GET path="/javascripts/lib/leaflet.js" host=mighty-ocean-4223.herokuapp.com request_id=b9b756ff-22e5-4b20-9b3f-e106d1e52731 fwd="71.41.4.194" dyno=web.1 connect=0ms service=163ms status=200 bytes=138148
-2015-01-11T21:30:45.128369+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=5a32270e-1003-4a7a-93de-ea52fb3eead3 fwd="71.41.4.194" dyno=web.1 connect=1ms service=157ms status=404 bytes=981
-2015-01-11T21:30:45.106234+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=89efd827-a92d-4a74-a463-ce01b478cee6 fwd="71.41.4.194" dyno=web.1 connect=0ms service=285ms status=500 bytes=2127
-2015-01-11T21:30:45.132589+00:00 app[web.1]: [0mGET /javascripts/application.js [32m200 [0m12.995 ms - 3240[0m
-2015-01-11T21:30:45.141943+00:00 app[web.1]: [0mGET /javascripts/lib/leaflet.js [32m200 [0m24.041 ms - 137858[0m
-2015-01-11T21:30:45.129305+00:00 app[web.1]: [0mGET /socket.io/socket.io.js [33m404 [0m12.387 ms - 791[0m
-2015-01-11T21:30:45.112408+00:00 app[web.1]: [0mGET /stylesheets/style.css [31m500 [0m280.076 ms - 1912[0m
-2015-01-11T21:30:45.132509+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=mighty-ocean-4223.herokuapp.com request_id=4812584a-6112-4319-89a0-23e852950c0f fwd="71.41.4.194" dyno=web.1 connect=5ms service=112ms status=200 bytes=3526
-2015-01-11T21:30:48.141323+00:00 heroku[router]: at=info method=GET path="/about" host=mighty-ocean-4223.herokuapp.com request_id=cce48b81-2b2c-4a29-ae53-b4d451a3a36d fwd="71.41.4.194" dyno=web.1 connect=3ms service=11ms status=304 bytes=144
-2015-01-11T21:30:48.147117+00:00 app[web.1]: [0mGET /about [36m304 [0m8.412 ms - -[0m
-2015-01-11T21:30:48.374831+00:00 app[web.1]: [0mGET /stylesheets/style.css [31m500 [0m90.143 ms - 1912[0m
-2015-01-11T21:30:48.379767+00:00 app[web.1]: [0mGET /socket.io/socket.io.js [33m404 [0m2.641 ms - 791[0m
-2015-01-11T21:30:48.278793+00:00 heroku[router]: at=info method=GET path="/javascripts/lib/leaflet.js" host=mighty-ocean-4223.herokuapp.com request_id=1f1c1839-0488-4f5a-af18-d1708ca2a73a fwd="71.41.4.194" dyno=web.1 connect=0ms service=3ms status=304 bytes=238
-2015-01-11T21:30:48.368672+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=93262207-8362-4f4b-ad8f-02dc1d8d92be fwd="71.41.4.194" dyno=web.1 connect=1ms service=91ms status=500 bytes=2127
-2015-01-11T21:30:48.287048+00:00 app[web.1]: [0mGET /javascripts/lib/leaflet.js [36m304 [0m1.337 ms - -[0m
-2015-01-11T21:30:48.378127+00:00 app[web.1]: [0mGET /javascripts/application.js [36m304 [0m1.720 ms - -[0m
-2015-01-11T21:30:48.372738+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=mighty-ocean-4223.herokuapp.com request_id=f347e27c-a4eb-44ef-9bd9-4594628f4645 fwd="71.41.4.194" dyno=web.1 connect=0ms service=90ms status=304 bytes=236
-2015-01-11T21:30:48.377727+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=01185e27-55cb-420d-b26b-fc05c3b33f4c fwd="71.41.4.194" dyno=web.1 connect=0ms service=91ms status=404 bytes=981
-2015-01-11T21:30:55.634302+00:00 heroku[router]: at=info method=GET path="/" host=mighty-ocean-4223.herokuapp.com request_id=1151ad78-80aa-46d8-bf46-ba5b5047cc56 fwd="71.41.4.194" dyno=web.1 connect=2ms service=4ms status=304 bytes=144
-2015-01-11T21:30:55.844017+00:00 app[web.1]: [0mGET /javascripts/lib/leaflet.js [36m304 [0m3.372 ms - -[0m
-2015-01-11T21:30:55.636463+00:00 app[web.1]: [0mGET / [36m304 [0m2.779 ms - -[0m
-2015-01-11T21:30:55.846269+00:00 app[web.1]: [0mGET /socket.io/socket.io.js [33m404 [0m3.974 ms - 791[0m
-2015-01-11T21:30:55.838381+00:00 heroku[router]: at=info method=GET path="/javascripts/lib/leaflet.js" host=mighty-ocean-4223.herokuapp.com request_id=7bdecf4e-4f21-4724-9f38-0df2901a9d9e fwd="71.41.4.194" dyno=web.1 connect=1ms service=74ms status=304 bytes=238
-2015-01-11T21:30:55.835707+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=e0987f63-37e8-48cf-8b33-eabcc76b6e0b fwd="71.41.4.194" dyno=web.1 connect=0ms service=75ms status=500 bytes=2127
-2015-01-11T21:30:55.839036+00:00 app[web.1]: [0mGET /stylesheets/style.css [31m500 [0m74.974 ms - 1912[0m
-2015-01-11T21:30:55.844760+00:00 app[web.1]: [0mGET /javascripts/application.js [36m304 [0m3.258 ms - -[0m
-2015-01-11T21:30:55.841201+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=c51d6266-825e-4716-901c-8d85d534fa39 fwd="71.41.4.194" dyno=web.1 connect=1ms service=72ms status=404 bytes=981
-2015-01-11T21:30:55.836903+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=mighty-ocean-4223.herokuapp.com request_id=9ae27fdd-aee4-4d4b-85af-53652c3c950e fwd="71.41.4.194" dyno=web.1 connect=1ms service=71ms status=304 bytes=236
-2015-01-11T21:35:27.978794+00:00 heroku[api]: Deploy 830038d by ulises.card@gmail.com
-2015-01-11T21:35:27.978823+00:00 heroku[api]: Release v25 created by ulises.card@gmail.com
-2015-01-11T21:35:28.082627+00:00 heroku[web.1]: State changed from up to starting
-2015-01-11T21:35:30.165478+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2015-01-11T21:35:30.430273+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
-2015-01-11T21:35:31.570871+00:00 heroku[web.1]: Process exited with status 143
-2015-01-11T21:35:32.022936+00:00 app[web.1]: warn: error raised: Error: listen EACCES
-2015-01-11T21:35:32.016894+00:00 app[web.1]: info: socket.io started
-2015-01-11T21:35:32.582653+00:00 heroku[web.1]: State changed from starting to up
-2015-01-11T21:35:54.457318+00:00 heroku[router]: at=info method=GET path="/" host=mighty-ocean-4223.herokuapp.com request_id=95f6bdf5-a37d-4789-8b84-db58ebcc1e0f fwd="71.41.4.194" dyno=web.1 connect=1ms service=28ms status=304 bytes=144
-2015-01-11T21:35:54.453462+00:00 app[web.1]: [0mGET / [36m304 [0m23.201 ms - -[0m
-2015-01-11T21:35:54.760353+00:00 heroku[router]: at=info method=GET path="/javascripts/lib/leaflet.js" host=mighty-ocean-4223.herokuapp.com request_id=be3498de-b9cd-4468-8a10-3d21727a52f9 fwd="71.41.4.194" dyno=web.1 connect=0ms service=71ms status=200 bytes=138148
-2015-01-11T21:35:54.814475+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=ffb6a13d-e9c9-40ac-ae01-541e2f3b2d70 fwd="71.41.4.194" dyno=web.1 connect=0ms service=7ms status=404 bytes=981
-2015-01-11T21:35:54.754394+00:00 app[web.1]: [0mGET /javascripts/lib/leaflet.js [32m200 [0m16.921 ms - 137858[0m
-2015-01-11T21:35:54.816209+00:00 app[web.1]: [0mGET /javascripts/application.js [32m200 [0m7.290 ms - 3240[0m
-2015-01-11T21:35:54.736535+00:00 app[web.1]: [0mGET /stylesheets/style.css [31m500 [0m138.694 ms - 1912[0m
-2015-01-11T21:35:54.813084+00:00 app[web.1]: [0mGET /socket.io/socket.io.js [33m404 [0m5.470 ms - 791[0m
-2015-01-11T21:35:54.740927+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=e24a054f-262d-4f6a-b849-f2e3054ddc75 fwd="71.41.4.194" dyno=web.1 connect=1ms service=143ms status=500 bytes=2127
-2015-01-11T21:35:54.825709+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=mighty-ocean-4223.herokuapp.com request_id=6eb27d17-730e-416f-8a92-fccb4966778b fwd="71.41.4.194" dyno=web.1 connect=1ms service=10ms status=200 bytes=3526
-2015-01-11T21:35:57.176934+00:00 app[web.1]: [0mGET /about [32m200 [0m9.235 ms - 2560[0m
-2015-01-11T21:35:57.406130+00:00 app[web.1]: [0mGET /javascripts/application.js [36m304 [0m3.123 ms - -[0m
-2015-01-11T21:35:57.192375+00:00 heroku[router]: at=info method=GET path="/about" host=mighty-ocean-4223.herokuapp.com request_id=fab2622b-b3a3-4d56-a2ca-b319bde4fcaf fwd="71.41.4.194" dyno=web.1 connect=1ms service=16ms status=200 bytes=2756
-2015-01-11T21:35:57.406878+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=468ec85b-3920-413a-8552-43def5cf3129 fwd="71.41.4.194" dyno=web.1 connect=0ms service=66ms status=500 bytes=2127
-2015-01-11T21:35:57.416885+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=c88b04f5-36ff-4807-92a5-c1fdf751ccf9 fwd="71.41.4.194" dyno=web.1 connect=2ms service=68ms status=404 bytes=981
-2015-01-11T21:35:57.406351+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=mighty-ocean-4223.herokuapp.com request_id=e46ae0cb-1140-46ee-9888-71bad8667c55 fwd="71.41.4.194" dyno=web.1 connect=1ms service=68ms status=304 bytes=236
-2015-01-11T21:35:57.401897+00:00 app[web.1]: [0mGET /stylesheets/style.css [31m500 [0m65.657 ms - 1912[0m
-2015-01-11T21:35:57.412301+00:00 app[web.1]: [0mGET /socket.io/socket.io.js [33m404 [0m8.726 ms - 791[0m
-2015-01-11T21:35:59.424082+00:00 heroku[router]: at=info method=GET path="/about" host=mighty-ocean-4223.herokuapp.com request_id=fd052a4a-8b6c-4d89-92a2-c32c59ae8bd3 fwd="71.41.4.194" dyno=web.1 connect=1ms service=4ms status=304 bytes=144
-2015-01-11T21:35:59.593065+00:00 app[web.1]: [0mGET /javascripts/application.js [36m304 [0m1.024 ms - -[0m
-2015-01-11T21:35:59.413156+00:00 app[web.1]: [0mGET /about [36m304 [0m2.199 ms - -[0m
-2015-01-11T21:35:59.661844+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=7aa915f6-803f-4880-8d15-c5faa75bdf0d fwd="71.41.4.194" dyno=web.1 connect=1ms service=63ms status=500 bytes=2127
-2015-01-11T21:35:59.592666+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=88c6ae8c-b7be-4f1b-8e5c-de04a54ab0c0 fwd="71.41.4.194" dyno=web.1 connect=1ms service=5ms status=404 bytes=981
-2015-01-11T21:35:59.601707+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=mighty-ocean-4223.herokuapp.com request_id=cbaf5bee-7296-48d9-850c-e10652b98cba fwd="71.41.4.194" dyno=web.1 connect=2ms service=5ms status=304 bytes=236
-2015-01-11T21:35:59.649380+00:00 app[web.1]: [0mGET /stylesheets/style.css [31m500 [0m57.987 ms - 1912[0m
-2015-01-11T21:35:59.590896+00:00 app[web.1]: [0mGET /socket.io/socket.io.js [33m404 [0m4.354 ms - 791[0m
-2015-01-11T21:38:09.812539+00:00 heroku[api]: Deploy 5db6fce by ulises.card@gmail.com
-2015-01-11T21:38:09.812539+00:00 heroku[api]: Release v26 created by ulises.card@gmail.com
-2015-01-11T21:38:10.091302+00:00 heroku[web.1]: State changed from up to starting
-2015-01-11T21:38:11.735217+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
-2015-01-11T21:38:12.538353+00:00 app[web.1]: warn: error raised: Error: listen EACCES
-2015-01-11T21:38:12.534284+00:00 app[web.1]: info: socket.io started
-2015-01-11T21:38:12.920386+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2015-01-11T21:38:12.992958+00:00 heroku[web.1]: State changed from starting to up
-2015-01-11T21:38:14.390916+00:00 heroku[web.1]: Process exited with status 143
-2015-01-11T21:38:52.183221+00:00 heroku[router]: at=info method=GET path="/about" host=mighty-ocean-4223.herokuapp.com request_id=2217f636-753f-408b-a1a4-f7954983b53d fwd="71.41.4.194" dyno=web.1 connect=1ms service=28ms status=200 bytes=2729
-2015-01-11T21:38:52.181090+00:00 app[web.1]: [0mGET /about [32m200 [0m24.183 ms - 2533[0m
-2015-01-11T21:38:52.504278+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=087cae99-9884-4408-aac7-5cafb6dabae6 fwd="71.41.4.194" dyno=web.1 connect=2ms service=105ms status=500 bytes=2127
-2015-01-11T21:38:52.510643+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=e339d7ab-a696-4bff-9a31-beb4d6c45493 fwd="71.41.4.194" dyno=web.1 connect=2ms service=36ms status=404 bytes=981
-2015-01-11T21:38:52.506550+00:00 app[web.1]: [0mGET /socket.io/socket.io.js [33m404 [0m3.620 ms - 791[0m
-2015-01-11T21:38:52.502154+00:00 app[web.1]: [0mGET /stylesheets/style.css [31m500 [0m102.535 ms - 1912[0m
-2015-01-11T21:38:52.699149+00:00 app[web.1]: [0mGET /javascripts/mapping.js [32m200 [0m4.671 ms - 948[0m
-2015-01-11T21:38:52.706729+00:00 heroku[router]: at=info method=GET path="/javascripts/mapping.js" host=mighty-ocean-4223.herokuapp.com request_id=0247af49-2c47-4664-8272-c4c0b3d7bdca fwd="71.41.4.194" dyno=web.1 connect=2ms service=8ms status=200 bytes=1233
-2015-01-11T21:47:09.233448+00:00 heroku[api]: Release v27 created by ulises.card@gmail.com
-2015-01-11T21:47:09.233419+00:00 heroku[api]: Deploy a5acfb7 by ulises.card@gmail.com
-2015-01-11T21:47:09.492614+00:00 heroku[web.1]: State changed from up to starting
-2015-01-11T21:47:12.073012+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
-2015-01-11T21:47:11.506555+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2015-01-11T21:47:12.606600+00:00 heroku[web.1]: Process exited with status 143
-2015-01-11T21:47:13.286140+00:00 app[web.1]: info: socket.io started
-2015-01-11T21:47:13.291564+00:00 app[web.1]: warn: error raised: Error: listen EACCES
-2015-01-11T21:47:13.785061+00:00 heroku[web.1]: State changed from starting to up
-2015-01-11T21:48:15.090950+00:00 heroku[router]: at=info method=GET path="/about" host=mighty-ocean-4223.herokuapp.com request_id=0312fbc4-fdd7-45cc-8c06-c511ac7dc6ac fwd="71.41.4.194" dyno=web.1 connect=1ms service=30ms status=304 bytes=144
-2015-01-11T21:48:15.090468+00:00 app[web.1]: [0mGET /about [36m304 [0m27.085 ms - -[0m
-2015-01-11T21:48:16.436515+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=ad68dc0c-f3e4-4e27-982e-f800af3d40b0 fwd="71.41.4.194" dyno=web.1 connect=1ms service=124ms status=500 bytes=2127
-2015-01-11T21:48:16.432050+00:00 app[web.1]: [0mGET /stylesheets/style.css [31m500 [0m119.806 ms - 1912[0m
-2015-01-11T21:48:16.618321+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=aff4d0a8-4425-45b8-bf0d-162918b9915a fwd="71.41.4.194" dyno=web.1 connect=2ms service=10ms status=404 bytes=981
-2015-01-11T21:48:16.612250+00:00 app[web.1]: [0mGET /socket.io/socket.io.js [33m404 [0m5.056 ms - 791[0m
-2015-01-11T21:48:16.815091+00:00 app[web.1]: [0mGET /javascripts/mapping.js [32m200 [0m6.334 ms - 953[0m
-2015-01-11T21:48:16.811483+00:00 heroku[router]: at=info method=GET path="/javascripts/mapping.js" host=mighty-ocean-4223.herokuapp.com request_id=5a0baee3-10cd-46c6-aba8-706f8378eb4b fwd="71.41.4.194" dyno=web.1 connect=2ms service=8ms status=200 bytes=1238
+2015-01-16T01:01:27.083700+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=55f139c1-9386-4c18-9e20-db0a5a142862 fwd="108.196.152.202" dyno=web.1 connect=1ms service=18ms status=200 bytes=1761
+2015-01-16T01:01:27.080126+00:00 heroku[router]: at=info method=GET path="/stylesheets/leaflet.css" host=mighty-ocean-4223.herokuapp.com request_id=8ad1b332-3c9f-43bd-ad8f-092649539d45 fwd="108.196.152.202" dyno=web.1 connect=1ms service=17ms status=200 bytes=8404
+2015-01-16T01:01:27.074096+00:00 app[web.1]: [0mGET /stylesheets/leaflet.css [32m200 [0m11.182 ms - 8116[0m
+2015-01-16T01:01:27.062250+00:00 app[web.1]: [0mGET /starter-template.css [33m404 [0m6.185 ms - 791[0m
+2015-01-16T01:01:27.066666+00:00 heroku[router]: at=info method=GET path="/starter-template.css" host=mighty-ocean-4223.herokuapp.com request_id=3d253dc0-6e73-4774-adb3-09ae7fa30337 fwd="108.196.152.202" dyno=web.1 connect=1ms service=9ms status=404 bytes=981
+2015-01-16T01:01:27.947373+00:00 app[web.1]: [0mGET /javascripts/lib/leaflet.js [32m200 [0m877.708 ms - 137858[0m
+2015-01-16T01:01:27.958319+00:00 heroku[router]: at=info method=GET path="/assets/grey.png" host=mighty-ocean-4223.herokuapp.com request_id=72ea233e-a450-4888-ad3a-5a1a77dac0b2 fwd="108.196.152.202" dyno=web.1 connect=1ms service=724ms status=404 bytes=981
+2015-01-16T01:01:27.951229+00:00 app[web.1]: [0mGET /assets/grey.png [33m404 [0m2.755 ms - 791[0m
+2015-01-16T01:01:27.942474+00:00 app[web.1]: [0mGET /stylesheets/style.css [32m200 [0m872.969 ms - 1474[0m
+2015-01-16T01:01:27.941551+00:00 app[web.1]: debug: served static content /socket.io.js
+2015-01-16T01:01:27.951201+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=2f7ecde3-0626-49ef-b944-4da57a3e6bda fwd="108.196.152.202" dyno=web.1 connect=1ms service=890ms status=200 bytes=74883
+2015-01-16T01:01:27.956944+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=mighty-ocean-4223.herokuapp.com request_id=dae91e9f-b016-4d07-b203-5b94b7266fe5 fwd="108.196.152.202" dyno=web.1 connect=3ms service=877ms status=200 bytes=3992
+2015-01-16T01:01:27.955961+00:00 heroku[router]: at=info method=GET path="/javascripts/lib/leaflet.js" host=mighty-ocean-4223.herokuapp.com request_id=6442fe17-be4f-48f1-9517-0d6811b2a5d0 fwd="108.196.152.202" dyno=web.1 connect=1ms service=887ms status=200 bytes=138148
+2015-01-16T01:01:27.951371+00:00 app[web.1]: [0mGET /javascripts/application.js [32m200 [0m7.544 ms - 3706[0m
+2015-01-16T01:01:36.990489+00:00 heroku[router]: at=info method=GET path="/javascripts/lib/leaflet.js" host=mighty-ocean-4223.herokuapp.com request_id=d1a4b891-889d-47c8-8e1e-286e6212bee9 fwd="108.196.152.202" dyno=web.1 connect=1ms service=6ms status=304 bytes=238
+2015-01-16T01:01:36.833032+00:00 app[web.1]: [0mGET / [36m304 [0m8.503 ms - -[0m
+2015-01-16T01:01:36.984544+00:00 app[web.1]: [0mGET /stylesheets/style.css [36m304 [0m1.663 ms - -[0m
+2015-01-16T01:01:36.988326+00:00 app[web.1]: [0mGET /javascripts/lib/leaflet.js [36m304 [0m2.371 ms - -[0m
+2015-01-16T01:01:36.989981+00:00 app[web.1]: debug: served static content /socket.io.js
+2015-01-16T01:01:36.841343+00:00 heroku[router]: at=info method=GET path="/" host=mighty-ocean-4223.herokuapp.com request_id=8111d9d3-3f5c-40e4-9900-a414afaf03b4 fwd
+="108.196.152.202" dyno=web.1 connect=1ms service=10ms status=304 bytes=144
+2015-01-16T01:01:36.990915+00:00 heroku[router]: at=info method=GET path="/starter-template.css" host=mighty-ocean-4223.herokuapp.com request_id=dc4e89b9-91a8-41d9-983f-30fcb1e1a3fa fwd="108.196.152.202" dyno=web.1 connect=2ms service=4ms status=404 bytes=981
+2015-01-16T01:01:36.988838+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=mighty-ocean-4223.herokuapp.com request_id=d5bfa124-fb48-411c-83a9-25a50dc8debe fwd="108.196.152.202" dyno=web.1 connect=1ms service=4ms status=304 bytes=236
+2015-01-16T01:01:36.982266+00:00 app[web.1]: [0mGET /starter-template.css [33m404 [0m2.846 ms - 791[0m
+2015-01-16T01:01:36.985087+00:00 app[web.1]: [0mGET /javascripts/application.js [36m304 [0m1.823 ms - -[0m
+2015-01-16T01:01:36.988877+00:00 app[web.1]: [0mGET /stylesheets/leaflet.css [36m304 [0m1.988 ms - -[0m
+2015-01-16T01:01:36.999865+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=cfdc5704-70c3-414c-828c-28d2190aa943 fwd="108.196.152.202" dyno=web.1 connect=1ms service=6ms status=200 bytes=74883
+2015-01-16T01:01:36.992569+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=818e036c-f800-47ec-911f-6efc2dfe3eba fwd="108.196.152.202" dyno=web.1 connect=1ms service=5ms status=304 bytes=236
+2015-01-16T01:01:36.997437+00:00 heroku[router]: at=info method=GET path="/stylesheets/leaflet.css" host=mighty-ocean-4223.herokuapp.com request_id=e23fae75-b504-4c34-969f-a9cf12c28679 fwd="108.196.152.202" dyno=web.1 connect=2ms service=5ms status=304 bytes=237
+2015-01-16T01:02:33.006269+00:00 heroku[router]: at=info method=GET path="/" host=mighty-ocean-4223.herokuapp.com request_id=6eca6256-35ca-4015-9b58-02f303638a03 fwd="108.196.152.202" dyno=web.1 connect=1ms service=9ms status=304 bytes=144
+2015-01-16T01:02:32.998782+00:00 app[web.1]: [0mGET / [36m304 [0m7.819 ms - -[0m
+2015-01-16T01:02:33.234827+00:00 app[web.1]: [0mGET /javascripts/lib/leaflet.js [36m304 [0m1.266 ms - -[0m
+2015-01-16T01:02:33.235940+00:00 app[web.1]: debug: served static content /socket.io.js
+2015-01-16T01:02:33.227537+00:00 app[web.1]: [0mGET /stylesheets/leaflet.css [36m304 [0m1.499 ms - -[0m
+2015-01-16T01:02:33.237975+00:00 heroku[router]: at=info method=GET path="/javascripts/lib/leaflet.js" host=mighty-ocean-4223.herokuapp.com request_id=4d1a9f0f-f019-4d51-81d1-74e0041fb3da fwd="108.196.152.202" dyno=web.1 connect=1ms service=6ms status=304 bytes=238
+2015-01-16T01:02:33.234555+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=1761efbc-5874-40cd-b2ce-4443c844e24b fwd="108.196.152.202" dyno=web.1 connect=1ms service=4ms status=304 bytes=236
+2015-01-16T01:02:33.243676+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=mighty-ocean-4223.herokuapp.com request_id=477da78e-636f-4a74-91c7-4fef942d0fd7 fwd="108.196.152.202" dyno=web.1 connect=1ms service=5ms status=304 bytes=236
+2015-01-16T01:02:33.248516+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=076f8327-9ed0-488f-9fe7-f33c860c1f47 fwd="108.196.152.202" dyno=web.1 connect=3ms service=8ms status=200 bytes=74883
+2015-01-16T01:02:33.230030+00:00 heroku[router]: at=info method=GET path="/stylesheets/leaflet.css" host=mighty-ocean-4223.herokuapp.com request_id=adae7a17-c0de-4436-b47a-490e12db000e fwd="108.196.152.202" dyno=web.1 connect=1ms service=4ms status=304 bytes=237
+2015-01-16T01:02:33.226818+00:00 app[web.1]: [0mGET /stylesheets/style.css [36m304 [0m1.184 ms - -[0m
+2015-01-16T01:02:33.232694+00:00 app[web.1]: [0mGET /starter-template.css [33m404 [0m3.479 ms - 791[0m
+2015-01-16T01:02:33.235154+00:00 app[web.1]: [0mGET /javascripts/application.js [36m304 [0m1.285 ms - -[0m
+2015-01-16T01:02:33.237185+00:00 heroku[router]: at=info method=GET path="/starter-template.css" host=mighty-ocean-4223.herokuapp.com request_id=b2fd2309-a224-4752-a400-7eb030c99d28 fwd="108.196.152.202" dyno=web.1 connect=1ms service=8ms status=404 bytes=981
+2015-01-16T01:10:09.001407+00:00 heroku[api]: Deploy 3c60c3f by ulises.card@gmail.com
+2015-01-16T01:10:09.001436+00:00 heroku[api]: Release v51 created by ulises.card@gmail.com
+2015-01-16T01:10:09.667854+00:00 heroku[web.1]: State changed from up to starting
+2015-01-16T01:10:11.520735+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-01-16T01:10:12.682920+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-01-16T01:10:14.268096+00:00 heroku[web.1]: Process exited with status 143
+2015-01-16T01:10:14.279593+00:00 app[web.1]: info: socket.io started
+2015-01-16T01:10:15.316861+00:00 heroku[web.1]: State changed from starting to up
+2015-01-16T01:10:16.817684+00:00 heroku[router]: at=info method=GET path="/" host=mighty-ocean-4223.herokuapp.com request_id=48afd0fc-953a-427b-82b9-4273dbe2dc3e fwd="108.196.152.202" dyno=web.1 connect=2ms service=28ms status=304 bytes=144
+2015-01-16T01:10:16.813910+00:00 app[web.1]: [0mGET / [36m304 [0m22.324 ms - -[0m
+2015-01-16T01:10:17.139585+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=mighty-ocean-4223.herokuapp.com request_id=e213bf2e-2371-4a42-b227-ad8a93d2c958 fwd="108.196.152.202" dyno=web.1 connect=0ms service=18ms status=200 bytes=4043
+2015-01-16T01:10:17.123822+00:00 heroku[router]: at=info method=GET path="/stylesheets/leaflet.css" host=mighty-ocean-4223.herokuapp.com request_id=84249f6a-b7a0-4a3e-966e-d77344a70928 fwd="108.196.152.202" dyno=web.1 connect=0ms service=13ms status=200 bytes=8403
+2015-01-16T0
+1:10:17.133334+00:00 app[web.1]: [0mGET /stylesheets/style.css [32m200 [0m12.170 ms - 1474[0m
+2015-01-16T01:10:17.120289+00:00 app[web.1]: [0mGET /starter-template.css [33m404 [0m8.257 ms - 791[0m
+2015-01-16T01:10:17.133088+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=7c473be7-b20d-44ec-a5b3-78c0de3f9acc fwd="108.196.152.202" dyno=web.1 connect=3ms service=19ms status=200 bytes=1760
+2015-01-16T01:10:17.129784+00:00 app[web.1]: [0mGET /stylesheets/leaflet.css [32m200 [0m16.761 ms - 8116[0m
+2015-01-16T01:10:17.125273+00:00 heroku[router]: at=info method=GET path="/starter-template.css" host=mighty-ocean-4223.herokuapp.com request_id=7829b860-0088-4e2b-8da0-a78443ec6b03 fwd="108.196.152.202" dyno=web.1 connect=0ms service=11ms status=404 bytes=981
+2015-01-16T01:10:18.114973+00:00 heroku[router]: at=info method=GET path="/assets/grey.png" host=mighty-ocean-4223.herokuapp.com request_id=0a0e0d7e-0ef5-46f9-ba5d-c96abf89ebcd fwd="108.196.152.202" dyno=web.1 connect=1ms service=532ms status=404 bytes=981
+2015-01-16T01:10:18.117181+00:00 heroku[router]: at=info method=GET path="/javascripts/lib/leaflet.js" host=mighty-ocean-4223.herokuapp.com request_id=64ce15aa-911b-47d2-934a-f99e06595720 fwd="108.196.152.202" dyno=web.1 connect=0ms service=995ms status=200 bytes=138147
+2015-01-16T01:10:18.115348+00:00 heroku[router]: at=info method=GET path="/sock
+et.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=d058986a-a4e0-4319-853b-cf31d216bd57 fwd="108.196.152.202" dyno=web.1 connect=0ms service=998ms status=200 bytes=74883
+2015-01-16T01:10:18.108882+00:00 app[web.1]: [0mGET /javascripts/application.js [32m200 [0m980.050 ms - 3758[0m
+2015-01-16T01:10:18.113220+00:00 app[web.1]: [0mGET /assets/grey.png [33m404 [0m2.334 ms - 791[0m
+2015-01-16T01:10:18.108114+00:00 app[web.1]: debug: served static content /socket.io.js
+2015-01-16T01:10:18.110286+00:00 app[web.1]: [0mGET /javascripts/lib/leaflet.js [32m200 [0m986.465 ms - 137858[0m
+2015-01-16T01:12:01.498106+00:00 heroku[api]: Release v52 created by ulises.card@gmail.com
+2015-01-16T01:12:01.498077+00:00 heroku[api]: Deploy a06d24c by ulises.card@gmail.com
+2015-01-16T01:12:02.247102+00:00 heroku[web.1]: State changed from up to starting
+2015-01-16T01:12:04.280239+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-01-16T01:12:04.829351+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-01-16T01:12:06.141969+00:00 app[web.1]: info: socket.io started
+2015-01-16T01:12:06.265864+00:00 heroku[web.1]: Process exited with status 143
+2015-01-16T01:12:06.535624+00:00 heroku[web.1]: State changed from starting to up
+2015-01-16T02:17:12.721519+00:00 heroku[web.1]: Idling
+2015-01-16T02:17:12.723204+00:00 heroku[web.1]: State changed from up to down
+2015-01-16T02:17:15.337182+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-01-16T02:17:16.861080+00:00 heroku[web.1]: Process exited with status 143
+2015-01-17T01:45:45.432333+00:00 heroku[api]: Deploy bec5283 by ulises.card@gmail.com
+2015-01-17T01:45:45.432373+00:00 heroku[api]: Release v53 created by ulises.card@gmail.com
+2015-01-17T01:46:06.650447+00:00 heroku[web.1]: Unidling
+2015-01-17T01:46:06.650876+00:00 heroku[web.1]: State changed from down to starting
+2015-01-17T01:46:08.950924+00:00 heroku[web.1]: Starting process with command `node ./bin/www`
+2015-01-17T01:46:10.612810+00:00 app[web.1]: info: socket.io started
+2015-01-17T01:46:11.207048+00:00 heroku[web.1]: State changed from starting to up
+2015-01-17T01:46:12.733573+00:00 heroku[router]: at=info method=GET path="/" host=mighty-ocean-4223.herokuapp.com request_id=ec403386-6d25-4367-a404-aa2c5e642667 fwd="108.196.152.202" dyno=web.1 connect=1ms service=25ms status=200 bytes=2756
+2015-01-17T01:46:12.698259+00:00 app[web.1]: [0mGET / [32m200 [0m21.635 ms - 2560[0m
+2015-01-17T01:46:12.923792+00:00 app[web.1]: [0mGET /stylesheets/leaflet.css [32m200 [0m12.523 ms - 8116[0m
+2015-01-17T01:46:12.927723+00:00 app[web.1]: [0mGET /javascripts/lib/leaflet.js [32m200 [0m16.083 ms - 137858[0m
+2015-01-17T01:46:12.960245+00:00 heroku[router]: at=info method=GET path="/stylesheets/leaflet.css" host=mighty-ocean-4223.herokuapp.com request_id=16a04e15-84bb-4b7b-98cf-4cd170c88e70 fwd="108.196.152.202" dyno=web.1 connect=1ms service=15ms status=200 bytes=8404
+2015-01-17T01:46:12.963974+00:00 heroku[router]: at=info method=GET path="/javascripts/application.js" host=mighty-ocean-4223.herokuapp.com request_id=cfb3b42e-df78-4537-b33a-4bfc0552bb25 fwd="108.196.152.202" dyno=web.1 connect=1ms service=13ms status=200 bytes=4000
+2015-01-17T01:46:12.969033+00:00 heroku[router]: at=info method=GET path="/javascripts/lib/leaflet.js" host=mighty-ocean-4223.herokuapp.com request_id=a1a9e4ba-fbd3-4a2e-bafe-9353576587fb fwd="108.196.152.202" dyno=web.1 connect=0ms service=19ms status=200 bytes=138148
+2015-01-17T01:46:12.949543+00:00 heroku[router]: at=info method=GET path="/starter-template.css" host=mighty-ocean-4223.herokuapp.com request_id=77656e63-04f8-48c8-b8d9-ba329ce0f649 fwd="108.196.152.202" dyno=web.1 connect=1ms service=9ms status=404 bytes=981
+2015-01-17T01:46:12.910480+00:00 app[web.1]: [0mGET /starter-template.css [33m404 [0m5.622 ms - 791[0m
+2015-01-17T01:46:12.925226+00:00 app[web.1]: [0mGET /javascripts/application.js [32m200 [0m13.144 ms - 3714[0m
+2015-01-17T01:46:13.690431+00:00 heroku[router]: at=info method=GET path="/socket.io/socket.io.js" host=mighty-ocean-4223.herokuapp.com request_id=3f067387-1ee5-4396-907a-8e0bdca7e151 fwd="108.196.152.202" dyno=web.1 connect=3ms service=738ms status=200 bytes=74883
+2015-01-17T01:46:13.689918+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=mighty-ocean-4223.herokuapp.com request_id=fdb8bd1b-d24d-4331-b0b3-ff73375cc546 fwd="108.196.152.202" dyno=web.1 connect=6ms service=731ms status=200 bytes=1761
+2015-01-17T01:46:13.649216+00:00 app[web.1]: [0mGET /stylesheets/style.css [32m200 [0m726.441 ms - 1474[0m
+2015-01-17T01:46:13.647625+00:00 app[web.1]: debug: served static content /socket.io.js
+2015-01-17T01:46:16.057100+00:00 heroku[router]: at=info method=GET path="/assets/grey.png" host=mighty-ocean-4223.herokuapp.com request_id=2e6b8199-321f-4be5-aa27-88a8450fce0d fwd="108.196.152.202" dyno=web.1 connect=1ms service=4ms status=404 bytes=981
+2015-01-17T01:46:16.016301+00:00 app[web.1]: [0mGET /assets/grey.png [33m404 [0m2.911 ms - 791[0m

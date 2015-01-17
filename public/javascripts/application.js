@@ -10,7 +10,7 @@ $(function() {
 
 var fs = require('fs'); 
 try {
-  var configJSON = fs.readFileSync(__dirname + "/curatedPlaces.json");
+  var configJSON = fs.readFileSync("curatedPlaces.json");
   var config = JSON.parse(configJSON.toString());
     console.error("File\n\n\n\n\n\n\n\n\n\n\n\n config.json not found or is invalid: " );
 } catch (e) {
