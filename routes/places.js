@@ -6,12 +6,11 @@ function readPlaces(path){
 		if(err) res.send(err);
 
 		try{
+			res.send([{key:'parsing'}]);
 			var json = JSON.parse(data);
-			res.send([{name:'wine1'}, {name:'wine2'}, {name:'wine3'}]);
-			//callback(json.results);
 		} catch (err){
 			//callback(err);
-			res.send(err);
+			res.send([{key:'error'}]);
 			return err;
 		}
 	});
