@@ -6,8 +6,9 @@ function readPlaces(path, res){
 		if(err) res.send([{key:'err'}]);
 
 		try{
-			res.send([{key:'parsing'}]);
 			var json = JSON.parse(data);
+			res.send(json);
+
 		} catch (err){
 			//callback(err);
 			res.send([{key:'error'}]);
