@@ -27,7 +27,6 @@ $(function() {
 	var connects = {};
 	var markers = {};
 	var active = false;
-	var places = my_parser.places();
 	socket.on('load:coords', function(data) {
 		if (!(data.id in connects)) {
 			setMarker(data);
