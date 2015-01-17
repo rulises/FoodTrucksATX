@@ -8,7 +8,6 @@ $(function() {
 	var info = $('#infobox');
 	var doc = $(document);
 
-	var data = JSON.parse(contents);
 	// custom marker's icon styles
 	var tinyIcon = L.Icon.extend({
 		options: {
@@ -70,12 +69,8 @@ $(function() {
 
 		// set map bounds
 		//map.fitWorld();
-
-		var str = '<p>You are there! Your ID is ' + userId;
-		str += '</p>';
 		userMarker.addTo(map);
-		userMarker.bindPopup(str).openPopup();
-
+		userMarker.bindPopup('<p>You are there! Your ID is ' + userId + '</p>').openPopup();
 
 		var emit = $.now();
 		// send coords on when user is active
