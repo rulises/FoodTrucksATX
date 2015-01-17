@@ -16,6 +16,6 @@ function readPlaces(path){
 	});
 };
 
-exports.findAllPlaces = function(req, res){
-	res.send(readPlaces(path);
-}
+module.exports.findAllPlaces = function(req, res){
+	res.send(readPlaces(path));
+};
