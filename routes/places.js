@@ -1,7 +1,7 @@
 var fs = require('fs');
-var path = '../data/curatedPlaces.json';
+var path = './data/curatedPlaces.json';
 
-function readPlaces(path){
+function readPlaces(path, res){
 	fs.readFile(path, 'utf-8', function(err, data) {
 		if(err) res.send([{key:'err'}]);
 
@@ -16,5 +16,5 @@ function readPlaces(path){
 };
 
 exports.findAllPlaces = function(req, res){
-	readPlaces(path);
+	readPlaces(path, res);
 };
