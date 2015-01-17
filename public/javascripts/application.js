@@ -9,8 +9,8 @@ $(function() {
 	var doc = $(document);
 
 	var places = [];
-	jQuery.getJSON('/places', function(data) {
-		places.results
+	jQuery.getJSON('../data/curatedPlaces.json', function(data) {
+		places =  data.results
 	});
 	// custom marker's icon styles
 	var tinyIcon = L.Icon.extend({
