@@ -8,15 +8,6 @@ $(function() {
 	var info = $('#infobox');
 	var doc = $(document);
 
-var fs = require('fs'); 
-try {
-  var configJSON = fs.readFileSync("curatedPlaces.json");
-  var config = JSON.parse(configJSON.toString());
-    console.error("File\n\n\n\n\n\n\n\n\n\n\n\n config.json not found or is invalid: " );
-} catch (e) {
-  console.error("File config.json not found or is invalid: " + e.message);
-  process.exit(1);
-}
 	var data = JSON.parse(contents);
 	// custom marker's icon styles
 	var tinyIcon = L.Icon.extend({
