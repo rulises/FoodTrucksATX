@@ -7,7 +7,10 @@ router.get('/', function(req, res) {
   res.render('index');
 });
 
-router.get('/places', places.findAllPlaces )
+router.get('/places',function(req, res) {
+	res.send(places.findAllPlaces )
+});
+
 
 /* GET about page. */
 router.get('/about', function(req, res) {
