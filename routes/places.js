@@ -3,15 +3,15 @@ var path = '../data/curatedPlaces.json';
 
 function readPlaces(path){
 	fs.readFile(path, 'utf-8', function(err, data) {
-		if(err) return err;
+		if(err) res.send(err);
 
 		try{
 			var json = JSON.parse(data);
-			return 'hello';
-			//return json;
+			res.send([{name:'wine1'}, {name:'wine2'}, {name:'wine3'}]);
 			//callback(json.results);
 		} catch (err){
 			//callback(err);
+			res.send(err);
 			return err;
 		}
 	});
