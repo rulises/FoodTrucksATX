@@ -8,6 +8,8 @@ $(function() {
 	var info = $('#infobox');
 	var doc = $(document);
 
+	var data = places.readAllPlaces;
+
 	// custom marker's icon styles
 	var tinyIcon = L.Icon.extend({
 		options: {

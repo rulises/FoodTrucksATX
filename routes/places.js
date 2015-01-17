@@ -16,6 +16,23 @@ function readPlaces(path, res){
 	});
 };
 
+function readJSONFile(path){
+	fs.readFile(path, 'utf-8', function(err, data) {
+		if(err) return [{key:'err'}];
+
+		try{
+			var json = JSON.parse(data);
+			return json;
+
+		} catch (err){
+			//callback(err);
+			return [{key:'error'}];
+		}
+	});
+};
+
+exports.readAllPlaces = readJSONFile(path);
+
 exports.findAllPlaces = function(req, res){
 	readPlaces(path, res);
 };
