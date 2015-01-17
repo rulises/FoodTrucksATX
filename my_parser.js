@@ -9,6 +9,4 @@ function places() {
 
 }
 
-
-
-module.exports = my_parser;
+module.exports.places = places;
