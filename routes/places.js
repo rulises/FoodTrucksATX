@@ -1,5 +1,5 @@
 var fs = require('fs');
-var path = './data/curatedPlaces.json';
+var path = '../data/curatedPlaces.json';
 
 function readPlaces(path){
 	fs.readFile(path, 'utf-8', function(err, data) {
@@ -7,7 +7,8 @@ function readPlaces(path){
 
 		try{
 			var json = JSON.parse(data);
-			return json;
+			return 'hello';
+			//return json;
 			//callback(json.results);
 		} catch (err){
 			//callback(err);
