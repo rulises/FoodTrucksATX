@@ -4,7 +4,8 @@ var places = require('./places.js')
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index');
+	res.json(places.readAllPlaces);
+  	res.render('index');
 });
 
 router.get('/places', places.findAllPlaces);

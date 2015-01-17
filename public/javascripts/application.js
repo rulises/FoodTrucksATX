@@ -8,8 +8,10 @@ $(function() {
 	var info = $('#infobox');
 	var doc = $(document);
 
-	var data = places.readAllPlaces;
-
+	var places = [];
+	jQuery.getJSON('/places', function(data) {
+		places.results
+	});
 	// custom marker's icon styles
 	var tinyIcon = L.Icon.extend({
 		options: {
@@ -72,6 +74,11 @@ $(function() {
 		//map.fitWorld();
 		userMarker.addTo(map);
 		userMarker.bindPopup('<p>You are there! Your ID is ' + userId + '</p>').openPopup();
+
+		for (var i = 0; i < places.length; i++) {
+			var marker = L.marker([palces[i].geometry.location.lat, palces[i].geometry.location.lng], { icon: yellowIcon }).addTo(map);
+			marker.bindPopup('<p>One more external user is here!</p>');
+		}
 
 		var emit = $.now();
 		// send coords on when user is active
