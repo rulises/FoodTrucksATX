@@ -37,6 +37,7 @@ $(function() {
 		connects[data.id].updated = $.now();
 	});
 
+my_parser
 	// check whether browser supports geolocation api
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(positionSuccess, positionError, { enableHighAccuracy: true });
@@ -67,6 +68,12 @@ $(function() {
 		 detectRetina: true 
 		}).addTo(map);
 
+		var places = my_parser.places();
+		for (var i = 0; i < places.length; i++) {
+			var place = places[i].geometry.location
+			var marker = L.marker([place.lat, place.lng], { icon: yellowIcon }).addTo(map);
+			marker.bindPopup('<p>One more external user is here!</p>');
+		}
 		// set map bounds
 		//map.fitWorld();
 		userMarker.addTo(map);
