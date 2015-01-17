@@ -9,7 +9,7 @@ $(function() {
 	var doc = $(document);
 
 	var places = [];
-	jQuery.getJSON('../data/curatedPlaces.json', function(data) {
+	jQuery.getJSON('/places', function(data) {
 		places =  data.results
 	});
 	// custom marker's icon styles
@@ -76,7 +76,7 @@ $(function() {
 		userMarker.bindPopup('<p>You are there! Your ID is ' + userId + '</p>').openPopup();
 
 		for (var i = 0; i < places.length; i++) {
-			var marker = L.marker([palces[i].geometry.location.lat, palces[i].geometry.location.lng], { icon: yellowIcon }).addTo(map);
+			var marker = L.marker([places[i].geometry.location.lat, places[i].geometry.location.lng], { icon: yellowIcon }).addTo(map);
 			marker.bindPopup('<p>One more external user is here!</p>');
 		}
 
